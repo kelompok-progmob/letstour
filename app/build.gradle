@@ -1,11 +1,11 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 27
     defaultConfig {
         applicationId "com.progmob.letstour"
-        minSdkVersion 15
-        targetSdkVersion 28
+        minSdkVersion 23
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -16,13 +16,89 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    dataBinding {
+        enabled true
+    }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:appcompat-v7:27.1.0'
+    implementation 'com.android.support:design:27.1.0'
+
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:support-v4:27.1.1'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    //KenBurns
+    implementation 'com.github.goka.kenburnsview:library:1.0.3'
+
+    //Charting
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0-alpha'
+    implementation 'com.jjoe64:graphview:4.2.2'
+
+    //MultiSelectDialog
+    implementation 'com.github.abumoallim:Android-Multi-Select-Dialog:v1.9'
+
+    //Expandable Layout
+    implementation 'net.cachapa.expandablelayout:expandablelayout:2.9.2'
+    //spinner
+    implementation 'com.github.arcadefire:nice-spinner:1.3.4'
+
+    //Dialog
+    implementation 'com.github.f0ris.sweetalert:library:1.5.1'
+
+    //Button
+    implementation 'info.hoang8f:fbutton:1.0.5'
+
+    //File Picker
+    implementation 'com.droidninja:filepicker:2.1.5'
+    implementation 'com.obsez.android.lib.filechooser:filechooser:1.1.10'
+
+    //Folding Cell, animasi folding
+    implementation 'com.ramotion.foldingcell:folding-cell:1.2.2'
+
+    //Moving Image
+    implementation 'com.flaviofaria:kenburnsview:1.0.7'
+
+    //Button
+    implementation 'com.github.medyo:fancybuttons:1.9.0'
+
+    //ARC Layout
+    implementation 'com.github.florent37:arclayout:1.0.3'
+
+    //cardview
+    implementation 'com.android.support:cardview-v7:27.1.0'
+
+    //Card Slider
+    implementation 'com.ramotion.cardslider:card-slider:0.3.0'
+
+    //Material Icon View
+    implementation 'net.steamcrafted:materialiconlib:1.1.5'
+
+    //Drawer Menu
+    implementation('com.mikepenz:materialdrawer:5.9.5@aar') {
+        transitive = true
+        exclude group: 'com.android.support'
+    }
+    implementation 'com.mikepenz:google-material-typeface:3.0.1.2.original'
+
+    //Validation
+    implementation 'com.mobsandgeeks:android-saripaar:2.0.3'
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+
+    //Increase Decrease Number
+    implementation 'com.cepheuen.elegant-number-button:lib:1.0.2'
+
+    implementation 'com.squareup.picasso:picasso:2.3.2'
+    implementation 'com.github.florent37:materialtextfield:1.0.5'
+
+    //Volley
+    implementation 'com.android.volley:volley:1.1.1'
+
 }
