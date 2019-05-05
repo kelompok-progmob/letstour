@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
-    <LinearLayout
+
+    <android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
-        android:orientation="vertical"
         tools:context=".MainActivity">
 
         <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nestedScrollView2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -24,15 +29,16 @@
                     <com.progmob.letstour.utils.KenBurnsEffect
                         android:id="@+id/ken_burns_view"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"/>
+                        android:layout_height="match_parent" />
 
                     <LinearLayout
-                        android:layout_gravity="start|bottom"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="start|bottom"
                         android:layout_marginLeft="24dp"
                         android:layout_marginBottom="16dp"
                         android:orientation="vertical">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -42,6 +48,7 @@
                             android:textColor="@color/colorSecondaryText"
                             android:textSize="28sp"
                             android:textStyle="bold" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -56,8 +63,8 @@
                         android:id="@+id/toolbar"
                         android:layout_width="match_parent"
                         android:layout_height="?attr/actionBarSize"
-                        app:layout_scrollFlags="enterAlways"
-                        android:theme="@style/CustomActionBar"/>
+                        android:theme="@style/CustomActionBar"
+                        app:layout_scrollFlags="enterAlways" />
                 </FrameLayout>
 
                 <LinearLayout
@@ -67,6 +74,7 @@
                     android:orientation="vertical">
 
                     <android.support.v7.widget.CardView
+                        android:visibility="gone"
                         android:id="@+id/cardIntro"
                         android:layout_width="265dp"
                         android:layout_height="92dp"
@@ -95,8 +103,8 @@
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:orientation="vertical"
-                                    android:gravity="center">
+                                    android:gravity="center"
+                                    android:orientation="vertical">
 
                                     <TextView
                                         android:id="@+id/card_intro_title"
@@ -109,16 +117,16 @@
                                         android:textStyle="bold" />
 
                                     <!--<Button-->
-                                        <!--android:id="@+id/main_learn_more"-->
-                                        <!--android:layout_width="100dp"-->
-                                        <!--android:layout_height="23dp"-->
-                                        <!--android:layout_gravity="center"-->
-                                        <!--android:background="@color/colorAccent"-->
-                                        <!--android:elevation="3dp"-->
-                                        <!--android:text="Login / Register"-->
-                                        <!--android:textAllCaps="false"-->
-                                        <!--android:textColor="@color/colorSecondaryText"-->
-                                        <!--android:textSize="12sp" />-->
+                                    <!--android:id="@+id/main_learn_more"-->
+                                    <!--android:layout_width="100dp"-->
+                                    <!--android:layout_height="23dp"-->
+                                    <!--android:layout_gravity="center"-->
+                                    <!--android:background="@color/colorAccent"-->
+                                    <!--android:elevation="3dp"-->
+                                    <!--android:text="Login / Register"-->
+                                    <!--android:textAllCaps="false"-->
+                                    <!--android:textColor="@color/colorSecondaryText"-->
+                                    <!--android:textSize="12sp" />-->
                                 </LinearLayout>
 
                             </FrameLayout>
@@ -130,263 +138,279 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="24dp"
                         android:layout_marginLeft="24dp"
-                        
-                        android:text="Countries"
+                        android:text="Locations"
                         android:textColor="#000"
                         android:textSize="18sp"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold" />
 
                     <android.support.v7.widget.RecyclerView
                         android:id="@+id/main_countries_recyclerview"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"/>
+                        android:orientation="horizontal" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="24dp"
                         android:layout_marginLeft="24dp"
-                        
+
                         android:text="Categories"
                         android:textColor="#000"
                         android:textSize="18sp"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
+
                         <LinearLayout
-                            android:layout_marginLeft="16dp"
-                            android:layout_marginRight="16dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
                             android:orientation="horizontal"
                             android:weightSum="100">
 
                             <LinearLayout
                                 android:id="@+id/agriculture"
                                 android:layout_width="0dp"
-                                android:layout_weight="25"
                                 android:layout_height="wrap_content"
-                                android:padding="4dp"
-                                android:orientation="vertical">
+                                android:layout_weight="25"
+                                android:orientation="vertical"
+                                android:padding="4dp">
+
                                 <android.support.design.widget.FloatingActionButton
-                                    app:backgroundTint="@color/colorSecondaryText"
-                                    android:src="@drawable/farmer"
-                                    android:layout_gravity="center_horizontal"
-                                    app:borderWidth="0dp"
-                                    app:elevation="2dp"
                                     android:layout_width="69dp"
-                                    android:layout_height="71dp"/>
+                                    android:layout_height="71dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/farmer"
+                                    app:backgroundTint="@color/colorSecondaryText"
+                                    app:borderWidth="0dp"
+                                    app:elevation="2dp" />
+
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    
+
                                     android:text="Agriculture"
-                                    android:textColor="#000"
                                     android:textAlignment="center"
+                                    android:textColor="#000"
                                     android:textSize="@dimen/category_fontsize"
-                                    android:textStyle="normal"/>
+                                    android:textStyle="normal" />
                             </LinearLayout>
 
                             <LinearLayout
                                 android:id="@+id/dance"
-                                android:layout_marginLeft="16dp"
                                 android:layout_width="0dp"
-                                android:layout_weight="25"
                                 android:layout_height="wrap_content"
-                                android:padding="4dp"
-                                android:orientation="vertical">
+                                android:layout_marginLeft="16dp"
+                                android:layout_weight="25"
+                                android:orientation="vertical"
+                                android:padding="4dp">
+
                                 <android.support.design.widget.FloatingActionButton
-                                    app:backgroundTint="@color/colorSecondaryText"
-                                    android:src="@drawable/dance"
-                                    android:layout_gravity="center_horizontal"
-                                    app:borderWidth="0dp"
-                                    app:elevation="2dp"
                                     android:layout_width="69dp"
-                                    android:layout_height="71dp"/>
+                                    android:layout_height="71dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/dance"
+                                    app:backgroundTint="@color/colorSecondaryText"
+                                    app:borderWidth="0dp"
+                                    app:elevation="2dp" />
+
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    
+
                                     android:text="Dance | Music"
-                                    android:textColor="#000"
                                     android:textAlignment="center"
+                                    android:textColor="#000"
                                     android:textSize="@dimen/category_fontsize"
-                                    android:textStyle="normal"/>
+                                    android:textStyle="normal" />
                             </LinearLayout>
 
                             <LinearLayout
                                 android:id="@+id/cook"
-                                android:layout_marginLeft="16dp"
                                 android:layout_width="0dp"
-                                android:layout_weight="25"
                                 android:layout_height="wrap_content"
-                                android:padding="4dp"
-                                android:orientation="vertical">
+                                android:layout_marginLeft="16dp"
+                                android:layout_weight="25"
+                                android:orientation="vertical"
+                                android:padding="4dp">
+
                                 <android.support.design.widget.FloatingActionButton
-                                    app:backgroundTint="@color/colorSecondaryText"
-                                    android:src="@drawable/food"
-                                    android:layout_gravity="center_horizontal"
-                                    app:borderWidth="0dp"
-                                    app:elevation="2dp"
                                     android:layout_width="69dp"
-                                    android:layout_height="71dp"/>
+                                    android:layout_height="71dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/food"
+                                    app:backgroundTint="@color/colorSecondaryText"
+                                    app:borderWidth="0dp"
+                                    app:elevation="2dp" />
+
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    
+
                                     android:text="Cook | Food"
-                                    android:textColor="#000"
                                     android:textAlignment="center"
+                                    android:textColor="#000"
                                     android:textSize="@dimen/category_fontsize"
-                                    android:textStyle="normal"/>
+                                    android:textStyle="normal" />
                             </LinearLayout>
 
                             <LinearLayout
                                 android:id="@+id/handycraft"
-                                android:layout_marginLeft="16dp"
                                 android:layout_width="0dp"
-                                android:layout_weight="25"
                                 android:layout_height="wrap_content"
-                                android:padding="4dp"
-                                android:orientation="vertical">
+                                android:layout_marginLeft="16dp"
+                                android:layout_weight="25"
+                                android:orientation="vertical"
+                                android:padding="4dp">
+
                                 <android.support.design.widget.FloatingActionButton
-                                    app:backgroundTint="@color/colorSecondaryText"
-                                    android:src="@drawable/handycraft"
-                                    android:layout_gravity="center_horizontal"
-                                    app:borderWidth="0dp"
-                                    app:elevation="2dp"
                                     android:layout_width="69dp"
-                                    android:layout_height="71dp"/>
+                                    android:layout_height="71dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/handycraft"
+                                    app:backgroundTint="@color/colorSecondaryText"
+                                    app:borderWidth="0dp"
+                                    app:elevation="2dp" />
+
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    
+
                                     android:text="Handycraft"
-                                    android:textColor="#000"
                                     android:textAlignment="center"
+                                    android:textColor="#000"
                                     android:textSize="@dimen/category_fontsize"
-                                    android:textStyle="normal"/>
+                                    android:textStyle="normal" />
                             </LinearLayout>
 
                         </LinearLayout>
 
                         <LinearLayout
-                            android:layout_marginLeft="16dp"
-                            android:layout_marginRight="16dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
                             android:orientation="horizontal"
                             android:weightSum="100">
 
                             <LinearLayout
                                 android:id="@+id/itdesign"
                                 android:layout_width="0dp"
-                                android:layout_weight="25"
                                 android:layout_height="wrap_content"
-                                android:padding="4dp"
-                                android:orientation="vertical">
+                                android:layout_weight="25"
+                                android:orientation="vertical"
+                                android:padding="4dp">
+
                                 <android.support.design.widget.FloatingActionButton
-                                    app:backgroundTint="@color/colorSecondaryText"
-                                    android:src="@drawable/it"
-                                    android:layout_gravity="center_horizontal"
-                                    app:borderWidth="0dp"
-                                    app:elevation="2dp"
                                     android:layout_width="69dp"
-                                    android:layout_height="71dp"/>
+                                    android:layout_height="71dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/it"
+                                    app:backgroundTint="@color/colorSecondaryText"
+                                    app:borderWidth="0dp"
+                                    app:elevation="2dp" />
+
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    
+
                                     android:text="IT | Design"
-                                    android:textColor="#000"
                                     android:textAlignment="center"
+                                    android:textColor="#000"
                                     android:textSize="@dimen/category_fontsize"
-                                    android:textStyle="normal"/>
+                                    android:textStyle="normal" />
                             </LinearLayout>
 
                             <LinearLayout
                                 android:id="@+id/herds"
-                                android:layout_marginLeft="16dp"
                                 android:layout_width="0dp"
-                                android:layout_weight="25"
                                 android:layout_height="wrap_content"
-                                android:padding="4dp"
-                                android:orientation="vertical">
+                                android:layout_marginLeft="16dp"
+                                android:layout_weight="25"
+                                android:orientation="vertical"
+                                android:padding="4dp">
+
                                 <android.support.design.widget.FloatingActionButton
-                                    app:backgroundTint="@color/colorSecondaryText"
-                                    android:src="@drawable/herd"
-                                    android:layout_gravity="center_horizontal"
-                                    app:borderWidth="0dp"
-                                    app:elevation="2dp"
                                     android:layout_width="69dp"
-                                    android:layout_height="71dp"/>
+                                    android:layout_height="71dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/herd"
+                                    app:backgroundTint="@color/colorSecondaryText"
+                                    app:borderWidth="0dp"
+                                    app:elevation="2dp" />
+
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    
+
                                     android:text="Herds"
-                                    android:textColor="#000"
                                     android:textAlignment="center"
+                                    android:textColor="#000"
                                     android:textSize="@dimen/category_fontsize"
-                                    android:textStyle="normal"/>
+                                    android:textStyle="normal" />
                             </LinearLayout>
 
                             <LinearLayout
                                 android:id="@+id/community"
-                                android:layout_marginLeft="16dp"
                                 android:layout_width="0dp"
-                                android:layout_weight="25"
                                 android:layout_height="wrap_content"
-                                android:padding="4dp"
-                                android:orientation="vertical">
+                                android:layout_marginLeft="16dp"
+                                android:layout_weight="25"
+                                android:orientation="vertical"
+                                android:padding="4dp">
+
                                 <android.support.design.widget.FloatingActionButton
-                                    app:backgroundTint="@color/colorSecondaryText"
-                                    android:src="@drawable/design"
-                                    android:layout_gravity="center_horizontal"
-                                    app:borderWidth="0dp"
-                                    app:elevation="2dp"
                                     android:layout_width="69dp"
-                                    android:layout_height="71dp"/>
+                                    android:layout_height="71dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/design"
+                                    app:backgroundTint="@color/colorSecondaryText"
+                                    app:borderWidth="0dp"
+                                    app:elevation="2dp" />
+
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    
+
                                     android:text="Community Design"
-                                    android:textColor="#000"
                                     android:textAlignment="center"
+                                    android:textColor="#000"
                                     android:textSize="@dimen/category_fontsize"
-                                    android:textStyle="normal"/>
+                                    android:textStyle="normal" />
                             </LinearLayout>
 
                             <LinearLayout
                                 android:id="@+id/others"
-                                android:layout_marginLeft="16dp"
                                 android:layout_width="0dp"
-                                android:layout_weight="25"
                                 android:layout_height="wrap_content"
-                                android:padding="4dp"
-                                android:orientation="vertical">
+                                android:layout_marginLeft="16dp"
+                                android:layout_weight="25"
+                                android:orientation="vertical"
+                                android:padding="4dp">
+
                                 <android.support.design.widget.FloatingActionButton
-                                    app:backgroundTint="@color/colorSecondaryText"
-                                    android:src="@drawable/travel"
-                                    android:layout_gravity="center_horizontal"
-                                    app:borderWidth="0dp"
-                                    app:elevation="2dp"
                                     android:layout_width="69dp"
-                                    android:layout_height="71dp"/>
+                                    android:layout_height="71dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/travel"
+                                    app:backgroundTint="@color/colorSecondaryText"
+                                    app:borderWidth="0dp"
+                                    app:elevation="2dp" />
+
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    
+
                                     android:text="Others"
-                                    android:textColor="#000"
                                     android:textAlignment="center"
+                                    android:textColor="#000"
                                     android:textSize="@dimen/category_fontsize"
-                                    android:textStyle="normal"/>
+                                    android:textStyle="normal" />
                             </LinearLayout>
 
                         </LinearLayout>
@@ -397,10 +421,9 @@
                 <FrameLayout
                     android:id="@+id/view_pager_frame"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
+                    android:layout_height="match_parent" />
 
             </LinearLayout>
         </android.support.v4.widget.NestedScrollView>
 
-    </LinearLayout>
-</layout>
+    </android.support.constraint.ConstraintLayout>
