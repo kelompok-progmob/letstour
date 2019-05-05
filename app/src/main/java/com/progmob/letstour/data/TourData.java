@@ -29,10 +29,10 @@ public class TourData {
                     "https://www.pegipegi.com/travel/wp-content/uploads/2017/07/foto-wisata-sawah-teras-sering-jatiluwih-tabanan-161203m-001.jpg", //image
                     "Tabanan, Bali", //location
                     "A Beautiful Rice Field View", //subtitle
-                    "This is the descriptin of this tour, to my team, please note that this must be change according to the title of each view", //description
+                    "This site is one of the island’s must-see natural panoramas on par with Mount Batur and the caldera of Kintamani", //description
                     "USD 23,5", // price
-                    "Overview", // overview
-                    "Preparation", // preparation
+                    "Nominated for designation as a UNESCO World Heritage site, Jatiluwih offers a beautiful view of contoured rice terraces irrigated using an impressive communal water system developed by Balinese farmers. The scenic drive through the quaint villages and verdant slopes of the central coastal regency of Tabanan adds to the experience.", // overview
+                    "Besides information regarding Jatiluwih rice terrace entrance fee. You also will get related information on Jatiluwih rice field, such as:", // preparation
             },
             {
                     "1", //id_country

@@ -16,6 +16,26 @@ public class CountryData {
                     "2", //id
                     "Lombok", //name
                     "https://www.bali.com/media/image/663/best-resorts-bali.jpg" //image
+            },
+            {
+                    "3", //id
+                    "Raja Ampat", //name
+                    "https://www.diveworldwide.com/images/galleries/asia_indonesia_dive_raja_ampat_gallery_papua_resort_thomas_haider.jpg" //image
+            },
+            {
+                    "4", //id
+                    "Yogyakarta", //name
+                    "https://www.dbs.com/iwov-resources/images/newsroom/indonesia/Blog/tempat%20wisata%20indonesia/image%20artikel-%20wisata%20Indonesia-%20yogyakarta.jpg" //image
+            },
+            {
+                    "5", //id
+                    "Kalimantan", //name
+                    "https://www.dbs.com/iwov-resources/images/newsroom/indonesia/Blog/tempat%20wisata%20indonesia/image%20artikel-%20wisata%20Indonesia-%20kalimantan.jpg" //image
+            },
+            {
+                    "6", //id
+                    "Wakatobi", //name
+                    "https://www.dbs.com/iwov-resources/images/newsroom/indonesia/Blog/tempat%20wisata%20indonesia/image%20artikel-%20wisata%20Indonesia-wakatobi.jpg" //image
             }
     };
 
