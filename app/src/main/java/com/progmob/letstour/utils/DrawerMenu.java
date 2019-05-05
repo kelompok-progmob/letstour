@@ -76,15 +76,14 @@ public class DrawerMenu {
 
             buildDrawerNotLoggedIn(context,activity,mToolbar, headerResult);
 
-
-
     }
 
     private void buildDrawerNotLoggedIn(Context context, AppCompatActivity activity, Toolbar mToolbar, AccountHeader headerResult){
         final Context contextFinal = context;
         final AppCompatActivity activityFinal = activity;
         //if you want to update the items at a later time it is recommended to keep it in a variable
-        PrimaryDrawerItem item1 = new PrimaryDrawerItem().withIdentifier(1).withName("Languages").withIcon(GoogleMaterial.Icon.gmd_language);
+        PrimaryDrawerItem item1 = new PrimaryDrawerItem().withIdentifier(1).withName("Profile").withIcon(GoogleMaterial.Icon.gmd_language);
+        PrimaryDrawerItem item2 = new PrimaryDrawerItem().withIdentifier(2).withName("Languages").withIcon(GoogleMaterial.Icon.gmd_language);
 
         //create the drawer and remember the `Drawer` result object
         Drawer result = new DrawerBuilder()
@@ -92,12 +91,20 @@ public class DrawerMenu {
                 .withAccountHeader(headerResult)
                 .withToolbar(mToolbar)
                 .addDrawerItems(
-                        item1
+                        item1,
+                        item2
                 )
                 .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
                     @Override
                     public boolean onItemClick(View view, int position, IDrawerItem drawerItem) {
                         if (drawerItem.getIdentifier() == 1){
+//                            Intent intent = new Intent(contextFinal, LoginActivity.class);
+//                            Bundle extras = new Bundle();
+//                            extras.putString("from","MainActivity");
+//                            intent.putExtras(extras);
+//                            contextFinal.startActivity(intent);
+                        }
+                        if (drawerItem.getIdentifier() == 2){
 //                            Intent intent = new Intent(contextFinal, LoginActivity.class);
 //                            Bundle extras = new Bundle();
 //                            extras.putString("from","MainActivity");
