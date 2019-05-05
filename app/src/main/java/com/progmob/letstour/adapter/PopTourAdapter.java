@@ -75,7 +75,6 @@ public class PopTourAdapter extends RecyclerView.Adapter<PopTourAdapter.MyViewHo
                 intent.putExtra("description", data.getDescription());
                 intent.putExtra("price", data.getPrice());
                 intent.putExtra("overview", data.getOverview());
-                intent.putExtra("activities", data.getActivities());
                 intent.putExtra("preparation", data.getPreparation());
                 context.startActivity(intent);
             }
