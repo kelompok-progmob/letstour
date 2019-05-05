@@ -32,7 +32,6 @@ public class TourData {
                     "This is the descriptin of this tour, to my team, please note that this must be change according to the title of each view", //description
                     "USD 23,5", // price
                     "Overview", // overview
-                    "Activities", // activities
                     "Preparation", // preparation
             },
             {
@@ -46,7 +45,6 @@ public class TourData {
                     "This is the descriptin of this tour, to my team, please note that this must be change according to the title of each view", //description
                     "USD 23,5", // price
                     "Overview", // overview
-                    "Activities", // activities
                     "Preparation", // preparation
             },
             {
@@ -60,7 +58,6 @@ public class TourData {
                     "This is the descriptin of this tour, to my team, please note that this must be change according to the title of each view", //description
                     "USD 23,5", // price
                     "Overview", // overview
-                    "Activities", // activities
                     "Preparation", // preparation
             },
             {
@@ -74,7 +71,6 @@ public class TourData {
                     "This is the descriptin of this tour, to my team, please note that this must be change according to the title of each view", //description
                     "USD 23,5", // price
                     "Overview", // overview
-                    "Activities", // activities
                     "Preparation", // preparation
             }
     };
@@ -94,6 +90,9 @@ public class TourData {
             model.setLocation(data[5]);
             model.setSubtitle(data[6]);
             model.setDescription(data[7]);
+            model.setPrice(data[8]);
+            model.setOverview(data[9]);
+            model.setPreparation(data[10]);
 
             if(is_popular == Integer.valueOf(data[2])){
                 list.add(model);

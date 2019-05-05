@@ -170,41 +170,6 @@
                         android:textColor="@color/colorPrimaryText"
                         tools:text="Through introducing recipes for our products, we want to add more variety to ways to eat and entertain our costumers. Develop recipes and promote with us."/>
 
-                    <LinearLayout
-                        android:layout_marginTop="8dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="5dp"
-                            android:layout_height="wrap_content"
-                            android:textSize="24sp"
-                            android:background="@color/colorAccent"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_gravity="center"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="8dp"
-                            android:textSize="18sp"
-                            android:text="Activities"
-                            android:textColor="@color/colorPrimaryText"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-
-                    <TextView
-                        android:id="@+id/detail_activites"
-                        android:layout_marginTop="18dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="16sp"
-                        android:textColor="@color/colorPrimaryText"
-                        tools:text="1. join work for materials and processing
-    2. try your recipe, esimate cost
-    3. try and improve
-    4. introduce your recipe and submit as a data"/>
 
                     <LinearLayout
                         android:layout_marginTop="8dp"

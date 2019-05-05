@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.progmob.letstour.R;
+import com.progmob.letstour.TourDetailActivity;
 import com.progmob.letstour.TourListActivity;
 import com.progmob.letstour.model.ModelTour;
 import com.squareup.picasso.Picasso;
@@ -66,12 +67,16 @@ public class PopTourAdapter extends RecyclerView.Adapter<PopTourAdapter.MyViewHo
                 int position = (int) view.getTag();
                 ModelTour data = getList().get(position);
 
-                Intent intent = new Intent(context, TourListActivity.class); // gets the previously created intent
-                intent.putExtra("tipe", "1");
-                intent.putExtra("id", data.getId());
+                Intent intent = new Intent(context, TourDetailActivity.class); // gets the previously created intent
                 intent.putExtra("name",data.getName());
                 intent.putExtra("image", data.getImage());
                 intent.putExtra("location", data.getLocation());
+                intent.putExtra("subtitle", data.getSubtitle());
+                intent.putExtra("description", data.getDescription());
+                intent.putExtra("price", data.getPrice());
+                intent.putExtra("overview", data.getOverview());
+                intent.putExtra("activities", data.getActivities());
+                intent.putExtra("preparation", data.getPreparation());
                 context.startActivity(intent);
             }
         });
