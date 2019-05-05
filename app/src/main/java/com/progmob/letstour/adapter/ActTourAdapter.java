@@ -21,7 +21,7 @@ import java.util.ArrayList;
  * Created by Herlambang
  */
 
-public class PopTourAdapter extends RecyclerView.Adapter<PopTourAdapter.MyViewHolder>{
+public class ActTourAdapter extends RecyclerView.Adapter<ActTourAdapter.MyViewHolder>{
 
     private LayoutInflater inflater;
     private Context context;
@@ -35,7 +35,7 @@ public class PopTourAdapter extends RecyclerView.Adapter<PopTourAdapter.MyViewHo
         this.list = list;
     }
 
-    public PopTourAdapter(Context context) {
+    public ActTourAdapter(Context context) {
         this.context = context;
         inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
@@ -43,7 +43,7 @@ public class PopTourAdapter extends RecyclerView.Adapter<PopTourAdapter.MyViewHo
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
-        View rootView = inflater.inflate(R.layout.item_pop_tour, parent, false);
+        View rootView = inflater.inflate(R.layout.item_act_tour, parent, false);
         return new MyViewHolder(rootView);
 
     }
@@ -53,6 +53,7 @@ public class PopTourAdapter extends RecyclerView.Adapter<PopTourAdapter.MyViewHo
 
         holder.mNama.setText(getList().get(position).getName());
         holder.mLocation.setText(getList().get(position).getLocation());
+        holder.mSubtitle.setText(getList().get(position).getSubtitle());
 
         Picasso.with(context)
                 .load(getList().get(position).getImage())
@@ -86,17 +87,18 @@ public class PopTourAdapter extends RecyclerView.Adapter<PopTourAdapter.MyViewHo
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
 
-        private TextView mNama,mLocation;
+        private TextView mNama,mLocation,mSubtitle;
         private ImageView mImage;
         private CardView mCard;
 
         public MyViewHolder(View itemView) {
             super(itemView);
 
-            mNama = itemView.findViewById(R.id.item_pop_name);
-            mImage = itemView.findViewById(R.id.item_pop_image);
-            mLocation = itemView.findViewById(R.id.item_pop_location);
-            mCard = itemView.findViewById(R.id.item_pop_card);
+            mNama = itemView.findViewById(R.id.item_tour_nama);
+            mImage = itemView.findViewById(R.id.item_tour_image);
+            mLocation = itemView.findViewById(R.id.item_tour_lokasi);
+            mSubtitle = itemView.findViewById(R.id.item_tour_subtitle);
+            mCard = itemView.findViewById(R.id.item_tour_card);
 
         }
     }

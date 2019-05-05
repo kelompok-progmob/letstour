@@ -14,21 +14,18 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.progmob.letstour.adapter.ActTourAdapter;
 import com.progmob.letstour.adapter.CountriesAdapter;
 import com.progmob.letstour.adapter.PopTourAdapter;
-import com.progmob.letstour.data.CountryData;
-import com.progmob.letstour.data.PopTourData;
-import com.progmob.letstour.databinding.ActivityMainBinding;
-import com.progmob.letstour.model.ModelCountry;
-import com.progmob.letstour.model.ModelPopTour;
-import com.squareup.picasso.Picasso;
+import com.progmob.letstour.data.TourData;
+import com.progmob.letstour.model.ModelTour;
 
 import java.util.ArrayList;
 
 public class TourListActivity extends AppCompatActivity {
 
 
-    RecyclerView topRv;
+    RecyclerView topRv, bottomRv;
     CountriesAdapter adapter;
 
     String id, name, image;
@@ -39,7 +36,8 @@ public class TourListActivity extends AppCompatActivity {
     AppBarLayout mAppBar;
     float opacity = 0;
 
-    private ArrayList<ModelPopTour> list = new ArrayList<>();
+    private ArrayList<ModelTour> list = new ArrayList<>();
+    private ArrayList<ModelTour> bottomList = new ArrayList<>();
 
     //TAG
     final String TAG = "TourListActivity";
@@ -67,12 +65,13 @@ public class TourListActivity extends AppCompatActivity {
 //        initializeToolbar();
 
         setPopTourRecyclerview();
+        setActTourRecyclerview();
 
     }
 
     public void setPopTourRecyclerview(){
 
-        list.addAll(PopTourData.getListData());
+        list.addAll(TourData.getListData(1));
 
         topRv = findViewById(R.id.top_recyclerview);
 
@@ -80,6 +79,21 @@ public class TourListActivity extends AppCompatActivity {
         PopTourAdapter adapter = new PopTourAdapter(this);
         adapter.setList(list);
         topRv.setAdapter(adapter);
+
+    }
+
+    public void setActTourRecyclerview(){
+
+        bottomList.addAll(TourData.getListData(0));
+
+        bottomRv = findViewById(R.id.bottom_recyclerview);
+
+        bottomRv.setLayoutManager(new LinearLayoutManager(this));
+        ActTourAdapter adapter = new ActTourAdapter(this);
+        adapter.setList(bottomList);
+        bottomRv.setAdapter(adapter);
+        bottomRv.setNestedScrollingEnabled(false);
+
 
     }
 

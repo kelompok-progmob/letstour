@@ -33,7 +33,8 @@ public class MainActivity extends AppCompatActivity {
 
     ActivityMainBinding binding;
 
-    Integer[] IMAGE_RESOUCE;
+//    Integer[] IMAGE_RESOUCE;
+    String[] IMAGE_RESOUCE;
 
     RecyclerView countriesRecyclerView;
     CountriesAdapter adapter;
@@ -52,11 +53,19 @@ public class MainActivity extends AppCompatActivity {
 
         setComponentView();
 
-        IMAGE_RESOUCE = new Integer[]{
-                R.drawable.dashboard_header1,
-                R.drawable.dashboard_header2,
-                R.drawable.dashboard_header3,
+//        IMAGE_RESOUCE = new Integer[]{
+//                R.drawable.dashboard_header1,
+//                R.drawable.dashboard_header2,
+//                R.drawable.dashboard_header3,
+//        };
+
+        IMAGE_RESOUCE = new String[]{
+                "https://experienceluxury.co/wp-content/uploads/2015/08/Rock-Bar-night.jpg",
+                "https://balicheapesttours.com/dummy/bali-tour-package9.jpg",
+                "https://cdn.rentalmobilbali.net/wp-content/uploads/2013/11/Tari-Kecak-Ubud.jpg",
+                "https://www.francetourisme.fr/media/illus/illus_3.jpg",
         };
+
         initializeKenBurnsView();
         setCountriesRecyclerView();
 
@@ -110,8 +119,9 @@ public class MainActivity extends AppCompatActivity {
         kenBurnsView.setScaleType(ImageView.ScaleType.CENTER_CROP);
 
         // File path, or a uri or url
-        List<Integer> urls = Arrays.asList(IMAGE_RESOUCE);
-        kenBurnsView.initResourceIDs(urls);
+        List<String> urls = Arrays.asList(IMAGE_RESOUCE);
+//        kenBurnsView.initResourceIDs(urls);
+        kenBurnsView.initStrings(urls);
 
         // ResourceID
         //List<Integer> resourceIDs = Arrays.asList(SampleImages.IMAGES_RESOURCE);

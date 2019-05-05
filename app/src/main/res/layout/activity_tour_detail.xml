@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".TourDetailActivity">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/appBarLayout"
+            android:background="@null"
+            android:elevation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_scrollFlags="enterAlways"
+                android:theme="@style/CustomActionBar"/>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/nestedScrollView">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/detail_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:src="@drawable/hongkong_vertical"
+                    android:scaleType="centerCrop"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="12dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/detail_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:textSize="24sp"
+                        tools:text="Recipe Developing"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <net.steamcrafted.materialiconlib.MaterialIconView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:materialIcon="timer"
+                            app:materialIconSize="18dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:textSize="12sp"
+                            android:textColor="@color/colorPrimaryText"
+                            tools:text="Durasi : "/>
+
+                        <TextView
+                            android:id="@+id/detail_duration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:textSize="12sp"
+                            android:textColor="@color/colorPrimaryText"
+                            tools:text="1 Hari"/>
+
+                        <net.steamcrafted.materialiconlib.MaterialIconView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:materialIcon="map_marker"
+                            app:materialIconSize="18dp"
+                            android:layout_marginLeft="4dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/detail_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:textSize="12sp"
+                            android:textColor="@color/colorPrimaryText"
+                            tools:text="Narita Intl (Nearest Airport)"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/detail_subtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        tools:text="develop recipes for kusunoki food products for promotion"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/detail_price"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        tools:text="US$ 23.49"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray"/>
+
+                    <LinearLayout
+                        android:layout_marginTop="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="5dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="24sp"
+                            android:background="@color/colorAccent"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:textSize="18sp"
+                            android:text="Overview"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/detail_overview"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorPrimaryText"
+                        tools:text="Through introducing recipes for our products, we want to add more variety to ways to eat and entertain our costumers. Develop recipes and promote with us."/>
+
+                    <LinearLayout
+                        android:layout_marginTop="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="5dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="24sp"
+                            android:background="@color/colorAccent"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:textSize="18sp"
+                            android:text="Activities"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/detail_activites"
+                        android:layout_marginTop="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorPrimaryText"
+                        tools:text="1. join work for materials and processing
+    2. try your recipe, esimate cost
+    3. try and improve
+    4. introduce your recipe and submit as a data"/>
+
+                    <LinearLayout
+                        android:layout_marginTop="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="5dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="24sp"
+                            android:background="@color/colorAccent"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:textSize="18sp"
+                            android:text="Preparation"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/detail_preparation"
+                        android:layout_marginTop="8dp"
+                        android:paddingBottom="80dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorPrimaryText"
+                        tools:text="recipe idea. Trial must be done."/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+        <!--<FrameLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--tools:layout_editor_absoluteX="0dp"-->
+            <!--tools:layout_editor_absoluteY="16dp">-->
+
+            <!--<Button-->
+                <!--android:id="@+id/tour_detail_btnBook"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_gravity="bottom"-->
+                <!--android:background="@color/colorAccent"-->
+                <!--android:elevation="2dp"-->
+                <!--android:text="Book this tour"-->
+                <!--android:textColor="@color/colorSecondaryText" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/tour_detail_btnListTraveler"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_gravity="bottom"-->
+                <!--android:background="@color/colorAccent"-->
+                <!--android:elevation="2dp"-->
+                <!--android:text="List Treveler"-->
+                <!--android:visibility="gone"-->
+                <!--android:textColor="@color/colorSecondaryText" />-->
+
+        <!--</FrameLayout>-->
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

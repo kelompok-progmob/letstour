@@ -1,75 +1,26 @@
 package com.progmob.letstour.model;
 
 public class ModelTour {
-
-    String id, country_id, tour_provider_id;
-    String name, location;
-    String short_description, overview, activity;
-    int minimum_person;
-    String preparation;
-    String image;
-    String location_latitude, location_longitude;
-    String nearest_airport;
-    String country;
-    String customStatus;
-    String status;
-    String category, status_popularity;
-    int verified_by_admin;
-    double adult_price, child_price;
-    int max_capacity;
-    int duration_hour;
-    int duration_day;
+    String id, id_country, name, image, location, subtitle, description, price, overview, activities, preparation;
+    int is_popular, id_category;
 
     public ModelTour() {
     }
 
-    public ModelTour(String id, String country_id, String tour_provider_id, String name, String location, String short_description, String overview, String activity, int minimum_person, String preparation, String image, String location_latitude, String location_longitude, String nearest_airport, String country, String customStatus, String status, String category, String status_popularity, int verified_by_admin, double adult_price, double child_price) {
+    public ModelTour(String id, String id_country, String name, String image, String location, String subtitle, String description, String price, String overview, String activities, String preparation, int is_popular, int id_category) {
         this.id = id;
-        this.country_id = country_id;
-        this.tour_provider_id = tour_provider_id;
+        this.id_country = id_country;
         this.name = name;
-        this.location = location;
-        this.short_description = short_description;
-        this.overview = overview;
-        this.activity = activity;
-        this.minimum_person = minimum_person;
-        this.preparation = preparation;
         this.image = image;
-        this.location_latitude = location_latitude;
-        this.location_longitude = location_longitude;
-        this.nearest_airport = nearest_airport;
-        this.country = country;
-        this.customStatus = customStatus;
-        this.status = status;
-        this.category = category;
-        this.status_popularity = status_popularity;
-        this.verified_by_admin = verified_by_admin;
-        this.adult_price = adult_price;
-        this.child_price = child_price;
-    }
-
-    public String getStatus_popularity() {
-        return status_popularity;
-    }
-
-    public void setStatus_popularity(String status_popularity) {
-        this.status_popularity = status_popularity;
-    }
-
-    public String getCountry() {
-        return country;
-    }
-
-    public void setCountry(String country) {
-        this.country = country;
-    }
-
-    public String getCategory() {
-        return category;
-    }
-
-    public void setCategory(String category) {
-        this.category = category;
+        this.location = location;
+        this.subtitle = subtitle;
+        this.description = description;
+        this.price = price;
+        this.overview = overview;
+        this.activities = activities;
+        this.preparation = preparation;
+        this.is_popular = is_popular;
+        this.id_category = id_category;
     }
 
     public String getId() {
@@ -80,28 +31,12 @@ public class ModelTour {
         this.id = id;
     }
 
-    public String getCountry_id() {
-        return country_id;
+    public String getId_country() {
+        return id_country;
     }
 
-    public void setCountry_id(String country_id) {
-        this.country_id = country_id;
-    }
-
-    public String getTour_provider_id() {
-        return tour_provider_id;
-    }
-
-    public void setTour_provider_id(String tour_provider_id) {
-        this.tour_provider_id = tour_provider_id;
-    }
-
-    public String getCustomStatus() {
-        return customStatus;
-    }
-
-    public void setCustomStatus(String customStatus) {
-        this.customStatus = customStatus;
+    public void setId_country(String id_country) {
+        this.id_country = id_country;
     }
 
     public String getName() {
@@ -112,6 +47,14 @@ public class ModelTour {
         this.name = name;
     }
 
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
     public String getLocation() {
         return location;
     }
@@ -120,12 +63,28 @@ public class ModelTour {
         this.location = location;
     }
 
-    public String getShort_description() {
-        return short_description;
+    public String getSubtitle() {
+        return subtitle;
     }
 
-    public void setShort_description(String short_description) {
-        this.short_description = short_description;
+    public void setSubtitle(String subtitle) {
+        this.subtitle = subtitle;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getPrice() {
+        return price;
+    }
+
+    public void setPrice(String price) {
+        this.price = price;
     }
 
     public String getOverview() {
@@ -136,20 +95,12 @@ public class ModelTour {
         this.overview = overview;
     }
 
-    public String getActivity() {
-        return activity;
+    public String getActivities() {
+        return activities;
     }
 
-    public void setActivity(String activity) {
-        this.activity = activity;
-    }
-
-    public int getMinimum_person() {
-        return minimum_person;
-    }
-
-    public void setMinimum_person(int minimum_person) {
-        this.minimum_person = minimum_person;
+    public void setActivities(String activities) {
+        this.activities = activities;
     }
 
     public String getPreparation() {
@@ -160,91 +111,19 @@ public class ModelTour {
         this.preparation = preparation;
     }
 
-    public String getImage() {
-        return image;
+    public int getIs_popular() {
+        return is_popular;
     }
 
-    public void setImage(String image) {
-        this.image = image;
+    public void setIs_popular(int is_popular) {
+        this.is_popular = is_popular;
     }
 
-    public String getLocation_latitude() {
-        return location_latitude;
+    public int getId_category() {
+        return id_category;
     }
 
-    public void setLocation_latitude(String location_latitude) {
-        this.location_latitude = location_latitude;
-    }
-
-    public String getLocation_longitude() {
-        return location_longitude;
-    }
-
-    public void setLocation_longitude(String location_longitude) {
-        this.location_longitude = location_longitude;
-    }
-
-    public String getNearest_airport() {
-        return nearest_airport;
-    }
-
-    public void setNearest_airport(String nearest_airport) {
-        this.nearest_airport = nearest_airport;
-    }
-
-    public int getVerified_by_admin() {
-        return verified_by_admin;
-    }
-
-    public void setVerified_by_admin(int verified_by_admin) {
-        this.verified_by_admin = verified_by_admin;
-    }
-
-    public double getAdult_price() {
-        return adult_price;
-    }
-
-    public void setAdult_price(double adult_price) {
-        this.adult_price = adult_price;
-    }
-
-    public double getChild_price() {
-        return child_price;
-    }
-
-    public void setChild_price(double child_price) {
-        this.child_price = child_price;
-    }
-
-    public int getMax_capacity() {
-        return max_capacity;
-    }
-
-    public void setMax_capacity(int max_capacity) {
-        this.max_capacity = max_capacity;
-    }
-
-    public int getDuration_hour() {
-        return duration_hour;
-    }
-
-    public void setDuration_hour(int duration_hour) {
-        this.duration_hour = duration_hour;
-    }
-
-    public int getDuration_day() {
-        return duration_day;
-    }
-
-    public void setDuration_day(int duration_day) {
-        this.duration_day = duration_day;
-    }
-
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
+    public void setId_category(int id_category) {
+        this.id_category = id_category;
     }
 }
