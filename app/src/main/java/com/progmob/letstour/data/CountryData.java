@@ -19,7 +19,7 @@ public class CountryData {
             },
             {
                     "3", //id
-                    "Raja Ampat", //name
+                    "Papua", //name
                     "https://www.diveworldwide.com/images/galleries/asia_indonesia_dive_raja_ampat_gallery_papua_resort_thomas_haider.jpg" //image
             },
             {
@@ -34,7 +34,7 @@ public class CountryData {
             },
             {
                     "6", //id
-                    "Wakatobi", //name
+                    "Sulawesi", //name
                     "https://www.dbs.com/iwov-resources/images/newsroom/indonesia/Blog/tempat%20wisata%20indonesia/image%20artikel-%20wisata%20Indonesia-wakatobi.jpg" //image
             }
     };
