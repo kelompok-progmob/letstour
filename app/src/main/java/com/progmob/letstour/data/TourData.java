@@ -62,6 +62,32 @@ public class TourData {
             },
             {
                     "1", //id_country
+                    "6", // id_category
+                    "1", //is_popular
+                    "Medical Recreation", //name
+                    "https://cdn.rentalmobilbali.net/wp-content/uploads/2011/12/permandian-pura-tirta-empul.jpg", //image
+                    "Tampak Siring, Bali", //location
+                    "A Holy Mountain Spring", //subtitle
+                    "The site serves as a legendary setting of a traditional tale about good versus evil. It is also a national cultural heritage site.", //description
+                    "USD 23,5", // price
+                    "Tirta Empul, meaning ‘holy water spring’ is actually the name of a water source located within the temple. The spring feeds various purification baths, pools and fish ponds surrounding the outer perimeter, which all flow to the Tukad Pakerisan River. Various sites throughout the region and many other archaeological relics relate to local myths and legends.", // overview
+                    "Besides information regarding Jatiluwih rice terrace entrance fee. You also will get related information on Jatiluwih rice field, such as:", // preparation
+            },
+            {
+                    "1", //id_country
+                    "2", // id_category
+                    "1", //is_popular
+                    "Kecak Dance", //name
+                    "http://www.whatsnewbali.com/wp-content/uploads/2018/04/uluwatu-kecak-dance.jpg", //image
+                    "Uluwatu, Bali", //location
+                    "Sakral Dance", //subtitle
+                    "The Kecak Fire Dance is one of Bali’s most iconic art performances, famous for its dominant use of human vocals in place of gamelan instruments to accompany the dance-drama at its core.", //description
+                    "USD 23,5", // price
+                    "Kecak Fire Dance show is included as part of the package if you booked a common tour to the temple, and which perfectly serves as a closing highlight to your day out in Bali’s south peninsula area. However, you can go just for the show and purchase tickets at the amphitheatre’s ticket booth up front. Tickets for walk-ins range between IDR 70,000 and 100,000 depending on low and peak season, and includes pamphlets containing the synopsis of the drama.", // overview
+                    "Besides information regarding Jatiluwih rice terrace entrance fee. You also will get related information on Jatiluwih rice field, such as:", // preparation
+            },
+            {
+                    "1", //id_country
                     "1", // id_category
                     "0", //is_popular
                     "Kuta Beach", //name
