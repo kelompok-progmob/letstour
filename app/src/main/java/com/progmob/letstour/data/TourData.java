@@ -271,7 +271,7 @@ public class TourData {
 
     };
 
-    public static ArrayList<ModelTour> getListData(int is_popular, int id_country){
+    public static ArrayList<ModelTour> getListData(int is_popular, int id_country, int tipe){
         ModelTour model = null;
         ArrayList<ModelTour> list = new ArrayList<>();
 
@@ -291,11 +291,15 @@ public class TourData {
             model.setPreparation(data[10]);
 
             if(is_popular == Integer.valueOf(data[2])){
-                if(id_country == 0){
-                    list.add(model);
+                if(tipe == 0){
+                    if(id_country == Integer.valueOf(data[0])){
+                        list.add(model);
+                    }
                 }
-                else if(id_country == Integer.valueOf(data[0])){
-                    list.add(model);
+                else{
+                    if(id_country == Integer.valueOf(data[1])){
+                        list.add(model);
+                    }
                 }
             }
 

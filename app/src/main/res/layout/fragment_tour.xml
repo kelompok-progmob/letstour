@@ -185,7 +185,7 @@
                                     android:layout_width="69dp"
                                     android:layout_height="71dp"
                                     android:layout_gravity="center_horizontal"
-                                    android:src="@drawable/Recreational"
+                                    android:src="@drawable/recreational"
                                     app:backgroundTint="@color/colorSecondaryText"
                                     app:borderWidth="0dp"
                                     app:elevation="2dp" />
@@ -202,7 +202,7 @@
                             </LinearLayout>
 
                             <LinearLayout
-                                android:id="@+id/dance"
+                                android:id="@+id/cultural"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="16dp"
@@ -214,7 +214,7 @@
                                     android:layout_width="69dp"
                                     android:layout_height="71dp"
                                     android:layout_gravity="center_horizontal"
-                                    android:src="@drawable/Cultural"
+                                    android:src="@drawable/cultural"
                                     app:backgroundTint="@color/colorSecondaryText"
                                     app:borderWidth="0dp"
                                     app:elevation="2dp" />
@@ -231,7 +231,7 @@
                             </LinearLayout>
 
                             <LinearLayout
-                                android:id="@+id/cook"
+                                android:id="@+id/nature"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="16dp"
@@ -243,7 +243,7 @@
                                     android:layout_width="69dp"
                                     android:layout_height="71dp"
                                     android:layout_gravity="center_horizontal"
-                                    android:src="@drawable/Nature"
+                                    android:src="@drawable/nature"
                                     app:backgroundTint="@color/colorSecondaryText"
                                     app:borderWidth="0dp"
                                     app:elevation="2dp" />
@@ -260,7 +260,7 @@
                             </LinearLayout>
 
                             <LinearLayout
-                                android:id="@+id/handycraft"
+                                android:id="@+id/pleasure"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="16dp"
@@ -272,7 +272,7 @@
                                     android:layout_width="69dp"
                                     android:layout_height="71dp"
                                     android:layout_gravity="center_horizontal"
-                                    android:src="@drawable/Pleasure"
+                                    android:src="@drawable/pleasure"
                                     app:backgroundTint="@color/colorSecondaryText"
                                     app:borderWidth="0dp"
                                     app:elevation="2dp" />
@@ -300,7 +300,7 @@
                             android:weightSum="100">
 
                             <LinearLayout
-                                android:id="@+id/itdesign"
+                                android:id="@+id/religious"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="25"
@@ -311,7 +311,7 @@
                                     android:layout_width="69dp"
                                     android:layout_height="71dp"
                                     android:layout_gravity="center_horizontal"
-                                    android:src="@drawable/Religious"
+                                    android:src="@drawable/religious"
                                     app:backgroundTint="@color/colorSecondaryText"
                                     app:borderWidth="0dp"
                                     app:elevation="2dp" />
@@ -328,7 +328,7 @@
                             </LinearLayout>
 
                             <LinearLayout
-                                android:id="@+id/community"
+                                android:id="@+id/adventour"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="16dp"
@@ -340,7 +340,7 @@
                                     android:layout_width="69dp"
                                     android:layout_height="71dp"
                                     android:layout_gravity="center_horizontal"
-                                    android:src="@drawable/Adventure"
+                                    android:src="@drawable/adventure"
                                     app:backgroundTint="@color/colorSecondaryText"
                                     app:borderWidth="0dp"
                                     app:elevation="2dp" />

@@ -56,7 +56,7 @@ public class TourFragment extends Fragment {
     Toolbar mToolbar;
 
     //Categories
-    LinearLayout mRecreational;
+    LinearLayout mRecreational, mCultural, mNature, mPleasure, mReligious, mAdventour;
 
     ConstraintLayout rootView;
 
@@ -167,8 +167,34 @@ public class TourFragment extends Fragment {
             public void onClick(View view) {
                 Intent intent = new Intent(getContext(), TourListActivity.class); // gets the previously created intent
                 intent.putExtra("tipe", "1");
-                intent.putExtra("id", "0");
-                intent.putExtra("name","Recreational");
+                intent.putExtra("id", "1");
+                intent.putExtra("name","recreational");
+                intent.putExtra("image", "https://www.mountainphotography.com/images/xl/20140226-Bridge-of-Heaven-Night.jpg");
+                startActivity(intent);
+            }
+        });
+
+        mCultural = rootView.findViewById(R.id.cultural);
+        mCultural.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), TourListActivity.class); // gets the previously created intent
+                intent.putExtra("tipe", "1");
+                intent.putExtra("id", "2");
+                intent.putExtra("name","recreational");
+                intent.putExtra("image", "https://www.mountainphotography.com/images/xl/20140226-Bridge-of-Heaven-Night.jpg");
+                startActivity(intent);
+            }
+        });
+
+        mNature = rootView.findViewById(R.id.nature);
+        mNature.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), TourListActivity.class); // gets the previously created intent
+                intent.putExtra("tipe", "1");
+                intent.putExtra("id", "3");
+                intent.putExtra("name","recreational");
                 intent.putExtra("image", "https://www.mountainphotography.com/images/xl/20140226-Bridge-of-Heaven-Night.jpg");
                 startActivity(intent);
             }

@@ -72,7 +72,7 @@ public class TourListActivity extends AppCompatActivity {
 
     public void setPopTourRecyclerview(){
 
-        list.addAll(TourData.getListData(1, Integer.valueOf(id)));
+        list.addAll(TourData.getListData(1, Integer.valueOf(id), Integer.valueOf(tipe)));
 
         topRv = findViewById(R.id.top_recyclerview);
 
@@ -85,7 +85,7 @@ public class TourListActivity extends AppCompatActivity {
 
     public void setActTourRecyclerview(){
 
-        bottomList.addAll(TourData.getListData(0, Integer.valueOf(id)));
+        bottomList.addAll(TourData.getListData(0, Integer.valueOf(id),Integer.valueOf(tipe)));
 
         bottomRv = findViewById(R.id.bottom_recyclerview);
 
