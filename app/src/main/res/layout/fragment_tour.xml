@@ -53,7 +53,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/poppins"
-                            android:text="Tour Experience That Deeper Than Ever"
+                            android:text="@string/subtitle"
                             android:textColor="@color/colorSecondaryText"
                             android:textSize="16sp"
                             android:textStyle="normal" />
@@ -138,7 +138,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="24dp"
                         android:layout_marginLeft="24dp"
-                        android:text="Locations"
+                        android:text="@string/locations"
                         android:textColor="#000"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -155,7 +155,7 @@
                         android:layout_marginStart="24dp"
                         android:layout_marginLeft="24dp"
 
-                        android:text="Categories"
+                        android:text="@string/categories"
                         android:textColor="#000"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -194,7 +194,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
 
-                                    android:text="Recreational"
+                                    android:text="@string/recreational"
                                     android:textAlignment="center"
                                     android:textColor="#000"
                                     android:textSize="@dimen/category_fontsize"
@@ -223,7 +223,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
 
-                                    android:text="Cultural"
+                                    android:text="@string/cultural"
                                     android:textAlignment="center"
                                     android:textColor="#000"
                                     android:textSize="@dimen/category_fontsize"
@@ -252,7 +252,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
 
-                                    android:text="Nature"
+                                    android:text="@string/nature"
                                     android:textAlignment="center"
                                     android:textColor="#000"
                                     android:textSize="@dimen/category_fontsize"
@@ -281,7 +281,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
 
-                                    android:text="Pleasure"
+                                    android:text="@string/pleasure"
                                     android:textAlignment="center"
                                     android:textColor="#000"
                                     android:textSize="@dimen/category_fontsize"
@@ -320,7 +320,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
 
-                                    android:text="Religious"
+                                    android:text="@string/religious"
                                     android:textAlignment="center"
                                     android:textColor="#000"
                                     android:textSize="@dimen/category_fontsize"
@@ -349,7 +349,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
 
-                                    android:text="Adventour"
+                                    android:text="@string/adventour"
                                     android:textAlignment="center"
                                     android:textColor="#000"
                                     android:textSize="@dimen/category_fontsize"

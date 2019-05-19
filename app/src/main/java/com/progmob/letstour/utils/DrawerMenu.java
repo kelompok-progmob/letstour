@@ -27,6 +27,8 @@ import com.progmob.letstour.R;
 import com.progmob.letstour.constant.Field;
 import com.squareup.picasso.Picasso;
 
+import cn.pedant.SweetAlert.SweetAlertDialog;
+
 public class DrawerMenu {
 
     String password, username, nama, sub_title, foto;
@@ -105,6 +107,25 @@ public class DrawerMenu {
 //                            contextFinal.startActivity(intent);
                         }
                         if (drawerItem.getIdentifier() == 2){
+
+                            SweetAlertDialog sDialog = new SweetAlertDialog(contextFinal, SweetAlertDialog.WARNING_TYPE)
+                                    .setTitleText("Are you sure?")
+                                    .setContentText("Won't be able to recover this file!")
+                                    .setConfirmText("Yes,delete it!")
+                                    .setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
+                                        @Override
+                                        public void onClick(SweetAlertDialog sDialog) {
+                                            sDialog.dismissWithAnimation();
+                                        }
+                                    })
+                                    .setCancelButton("Cancel", new SweetAlertDialog.OnSweetClickListener() {
+                                        @Override
+                                        public void onClick(SweetAlertDialog sDialog) {
+                                            sDialog.dismissWithAnimation();
+                                        }
+                                    });
+                            sDialog.show();
+
 //                            Intent intent = new Intent(contextFinal, LoginActivity.class);
 //                            Bundle extras = new Bundle();
 //                            extras.putString("from","MainActivity");

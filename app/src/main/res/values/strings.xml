@@ -3,7 +3,16 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="tour">Tours</string>
+    <string name="tour">Tour</string>
     <string name="promo">Promo</string>
     <string name="search">Search</string>
+    <string name="subtitle">Tour Experience That Deeper Than Ever</string>
+    <string name="locations">Locations</string>
+    <string name="categories">Categories</string>
+    <string name="recreational">Recreational</string>
+    <string name="cultural">Cultural</string>
+    <string name="nature">Nature</string>
+    <string name="pleasure">Pleasure</string>
+    <string name="religious">Religious</string>
+    <string name="adventour">Adventour</string>
 </resources>

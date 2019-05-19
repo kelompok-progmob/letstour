@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LetsTour</string>
+    <string name="search">Cari</string>
+    <string name="tour">Tour</string>
+    <string name="hello_blank_fragment">Halo fragment kosong</string>
+    <string name="promo">Promo</string>
+    <string name="adventour">Petualangan</string>
+    <string name="categories">Kategori</string>
+    <string name="cultural">Budaya</string>
+    <string name="locations">Lokasi</string>
+    <string name="nature">Alam</string>
+    <string name="pleasure">Ketenangan</string>
+    <string name="recreational">Rekreasi</string>
+    <string name="religious">Religius</string>
+    <string name="subtitle">Pengalaman Tour Spektakuler Disini</string>
+</resources>
