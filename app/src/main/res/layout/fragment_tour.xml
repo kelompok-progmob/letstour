@@ -174,7 +174,7 @@
                             android:weightSum="100">
 
                             <LinearLayout
-                                android:id="@+id/agriculture"
+                                android:id="@+id/recreational"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="25"
@@ -194,7 +194,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
 
-                                    android:text="Agriculture"
+                                    android:text="Recreational"
                                     android:textAlignment="center"
                                     android:textColor="#000"
                                     android:textSize="@dimen/category_fontsize"
@@ -223,7 +223,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
 
-                                    android:text="Dance | Music"
+                                    android:text="Cultural"
                                     android:textAlignment="center"
                                     android:textColor="#000"
                                     android:textSize="@dimen/category_fontsize"
@@ -252,7 +252,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
 
-                                    android:text="Cook | Food"
+                                    android:text="Nature"
                                     android:textAlignment="center"
                                     android:textColor="#000"
                                     android:textSize="@dimen/category_fontsize"
@@ -281,7 +281,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
 
-                                    android:text="Handycraft"
+                                    android:text="Pleasure"
                                     android:textAlignment="center"
                                     android:textColor="#000"
                                     android:textSize="@dimen/category_fontsize"
@@ -296,6 +296,7 @@
                             android:layout_marginLeft="16dp"
                             android:layout_marginRight="16dp"
                             android:orientation="horizontal"
+                            android:gravity="center"
                             android:weightSum="100">
 
                             <LinearLayout
@@ -319,7 +320,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
 
-                                    android:text="IT | Design"
+                                    android:text="Religious"
                                     android:textAlignment="center"
                                     android:textColor="#000"
                                     android:textSize="@dimen/category_fontsize"
@@ -348,7 +349,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
 
-                                    android:text="Herds"
+                                    android:text="Medical Pilgrimage"
                                     android:textAlignment="center"
                                     android:textColor="#000"
                                     android:textSize="@dimen/category_fontsize"
@@ -377,36 +378,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
 
-                                    android:text="Community Design"
-                                    android:textAlignment="center"
-                                    android:textColor="#000"
-                                    android:textSize="@dimen/category_fontsize"
-                                    android:textStyle="normal" />
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:id="@+id/others"
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="16dp"
-                                android:layout_weight="25"
-                                android:orientation="vertical"
-                                android:padding="4dp">
-
-                                <android.support.design.widget.FloatingActionButton
-                                    android:layout_width="69dp"
-                                    android:layout_height="71dp"
-                                    android:layout_gravity="center_horizontal"
-                                    android:src="@drawable/travel"
-                                    app:backgroundTint="@color/colorSecondaryText"
-                                    app:borderWidth="0dp"
-                                    app:elevation="2dp" />
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-
-                                    android:text="Others"
+                                    android:text="Adventour"
                                     android:textAlignment="center"
                                     android:textColor="#000"
                                     android:textSize="@dimen/category_fontsize"

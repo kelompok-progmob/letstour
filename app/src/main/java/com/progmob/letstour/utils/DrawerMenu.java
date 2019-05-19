@@ -43,7 +43,7 @@ public class DrawerMenu {
         session = sharedpreferences.getBoolean(Field.getSessionStatus(),false);
 
         nama = "Guest";
-        sub_title = "Silahkan Login";
+        sub_title = "LetsTour Guest";
 
 
         // Create the AccountHeader
@@ -82,8 +82,8 @@ public class DrawerMenu {
         final Context contextFinal = context;
         final AppCompatActivity activityFinal = activity;
         //if you want to update the items at a later time it is recommended to keep it in a variable
-        PrimaryDrawerItem item1 = new PrimaryDrawerItem().withIdentifier(1).withName("Profile").withIcon(GoogleMaterial.Icon.gmd_language);
-        PrimaryDrawerItem item2 = new PrimaryDrawerItem().withIdentifier(2).withName("Languages").withIcon(GoogleMaterial.Icon.gmd_language);
+        PrimaryDrawerItem item1 = new PrimaryDrawerItem().withIdentifier(1).withName("Home").withIcon(GoogleMaterial.Icon.gmd_home).withTextColor(context.getResources().getColor(R.color.colorPrimaryText)).withSelectedTextColor(context.getResources().getColor(R.color.colorPrimaryText)).withSelectedIconColor(context.getResources().getColor(R.color.colorPrimaryText));
+        PrimaryDrawerItem item2 = new PrimaryDrawerItem().withIdentifier(2).withName("Languages").withIcon(GoogleMaterial.Icon.gmd_language).withTextColor(context.getResources().getColor(R.color.colorPrimaryText)).withSelectedTextColor(context.getResources().getColor(R.color.colorPrimaryText)).withSelectedIconColor(context.getResources().getColor(R.color.colorPrimaryText));
 
         //create the drawer and remember the `Drawer` result object
         Drawer result = new DrawerBuilder()

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
     <android.support.constraint.ConstraintLayout
@@ -38,7 +39,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_marginBottom="100dp">
 
                 <ImageView
                     android:id="@+id/image"
@@ -67,28 +69,28 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
-                        <net.steamcrafted.materialiconlib.MaterialIconView xmlns:app="http://schemas.android.com/apk/res-auto"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            app:materialIcon="timer"
-                            app:materialIconSize="18dp"
-                            />
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="4dp"
-                            android:textSize="12sp"
-                            android:textColor="@color/colorPrimaryText"
-                            tools:text="Durasi : "/>
+                        <!--<net.steamcrafted.materialiconlib.MaterialIconView xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--app:materialIcon="timer"-->
+                            <!--app:materialIconSize="18dp"-->
+                            <!--/>-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginLeft="4dp"-->
+                            <!--android:textSize="12sp"-->
+                            <!--android:textColor="@color/colorPrimaryText"-->
+                            <!--tools:text="Durasi : "/>-->
 
-                        <TextView
-                            android:id="@+id/duration"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="4dp"
-                            android:textSize="12sp"
-                            android:textColor="@color/colorPrimaryText"
-                            tools:text="1 Hari"/>
+                        <!--<TextView-->
+                            <!--android:id="@+id/duration"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginLeft="4dp"-->
+                            <!--android:textSize="12sp"-->
+                            <!--android:textColor="@color/colorPrimaryText"-->
+                            <!--tools:text="1 Hari"/>-->
 
                         <net.steamcrafted.materialiconlib.MaterialIconView
                             xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -120,9 +122,15 @@
                         android:textStyle="normal" />
 
                     <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="8dp"
+                        android:text="Estimated Lowest Tour Price"/>
+
+                    <TextView
                         android:id="@+id/price"
                         android:layout_width="wrap_content"
-                        android:layout_marginTop="8dp"
                         android:layout_height="wrap_content"
                         android:textSize="24sp"
                         tools:text="US$ 23.49"
@@ -212,11 +220,28 @@
 
         </android.support.v4.widget.NestedScrollView>
 
-        <!--<FrameLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent"-->
-            <!--tools:layout_editor_absoluteX="0dp"-->
-            <!--tools:layout_editor_absoluteY="16dp">-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="16dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                card_view:cardCornerRadius="3dp"
+                card_view:cardElevation="4dp"
+                card_view:cardUseCompatPadding="true"
+                >
+                <com.example.jean.jcplayer.view.JcPlayerView
+                    android:id="@+id/playerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+            </android.support.v7.widget.CardView>
+
+
 
             <!--<Button-->
                 <!--android:id="@+id/tour_btnBook"-->
@@ -239,7 +264,7 @@
                 <!--android:visibility="gone"-->
                 <!--android:textColor="@color/colorSecondaryText" />-->
 
-        <!--</FrameLayout>-->
+        </FrameLayout>
 
     </android.support.constraint.ConstraintLayout>
 </layout>

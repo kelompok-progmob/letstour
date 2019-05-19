@@ -13,8 +13,12 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
+import com.example.jean.jcplayer.model.JcAudio;
+import com.example.jean.jcplayer.view.JcPlayerView;
 import com.progmob.letstour.databinding.ActivityTourDetailBinding;
 import com.squareup.picasso.Picasso;
+
+import java.util.ArrayList;
 
 public class TourDetailActivity extends AppCompatActivity {
 
@@ -58,6 +62,13 @@ public class TourDetailActivity extends AppCompatActivity {
         binding.price.setText(price);
         binding.overview.setText(overview);
         binding.preparation.setText(preparation);
+
+        JcPlayerView jcplayerView = findViewById(R.id.playerview);
+
+        ArrayList<JcAudio> jcAudios = new ArrayList<>();
+        jcAudios.add(JcAudio.createFromRaw(name, R.raw.sample));
+
+        jcplayerView.initPlaylist(jcAudios, null);
 
         setHeader();
 

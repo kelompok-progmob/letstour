@@ -7,20 +7,20 @@ import java.util.ArrayList;
 public class TourData {
 
     public static String[][] collection = new String[][]{
-//            {
-//                    "1", //id_country
-//                    "1", // id_category
-//                    "1", //is_popular
-//                    "Terasering View", //name
-//                    "https://www.pegipegi.com/travel/wp-content/uploads/2017/07/foto-wisata-sawah-teras-sering-jatiluwih-tabanan-161203m-001.jpg", //image
-//                    "Tabanan, Bali", //location
-//                    "A Beautiful Rice Field View", //subtitle
-//                    "This is the descriptin of this tour, to my team, please note that this must be change according to the title of each view", //description
-//                    "USD 23,5", // price
-//                    "Overview", // overview
-//                    "Activities", // activities
-//                    "Preparation", // preparation
-//            },
+
+            {
+                    "1", //id_country
+                    "6", // id_category
+                    "1", //is_popular
+                    "Medical Recreation", //name
+                    "https://cdn.rentalmobilbali.net/wp-content/uploads/2011/12/permandian-pura-tirta-empul.jpg", //image
+                    "Tampak Siring, Bali", //location
+                    "A Holy Mountain Spring", //subtitle
+                    "The site serves as a legendary setting of a traditional tale about good versus evil. It is also a national cultural heritage site.", //description
+                    "USD 23,5", // price
+                    "Tirta Empul, meaning ‘holy water spring’ is actually the name of a water source located within the temple. The spring feeds various purification baths, pools and fish ponds surrounding the outer perimeter, which all flow to the Tukad Pakerisan River. Various sites throughout the region and many other archaeological relics relate to local myths and legends.", // overview
+                    "Besides information regarding Jatiluwih rice terrace entrance fee. You also will get related information on Jatiluwih rice field, such as:", // preparation
+            },
             {
                     "1", //id_country
                     "3", // id_category
@@ -62,21 +62,8 @@ public class TourData {
             },
             {
                     "1", //id_country
-                    "6", // id_category
-                    "1", //is_popular
-                    "Medical Recreation", //name
-                    "https://cdn.rentalmobilbali.net/wp-content/uploads/2011/12/permandian-pura-tirta-empul.jpg", //image
-                    "Tampak Siring, Bali", //location
-                    "A Holy Mountain Spring", //subtitle
-                    "The site serves as a legendary setting of a traditional tale about good versus evil. It is also a national cultural heritage site.", //description
-                    "USD 23,5", // price
-                    "Tirta Empul, meaning ‘holy water spring’ is actually the name of a water source located within the temple. The spring feeds various purification baths, pools and fish ponds surrounding the outer perimeter, which all flow to the Tukad Pakerisan River. Various sites throughout the region and many other archaeological relics relate to local myths and legends.", // overview
-                    "Besides information regarding Jatiluwih rice terrace entrance fee. You also will get related information on Jatiluwih rice field, such as:", // preparation
-            },
-            {
-                    "1", //id_country
                     "2", // id_category
-                    "1", //is_popular
+                    "0", //is_popular
                     "Kecak Dance", //name
                     "http://www.whatsnewbali.com/wp-content/uploads/2018/04/uluwatu-kecak-dance.jpg", //image
                     "Uluwatu, Bali", //location
@@ -85,19 +72,6 @@ public class TourData {
                     "USD 23,5", // price
                     "Kecak Fire Dance show is included as part of the package if you booked a common tour to the temple, and which perfectly serves as a closing highlight to your day out in Bali’s south peninsula area. However, you can go just for the show and purchase tickets at the amphitheatre’s ticket booth up front. Tickets for walk-ins range between IDR 70,000 and 100,000 depending on low and peak season, and includes pamphlets containing the synopsis of the drama.", // overview
                     "Besides information regarding Jatiluwih rice terrace entrance fee. You also will get related information on Jatiluwih rice field, such as:", // preparation
-            },
-            {
-                    "1", //id_country
-                    "1", // id_category
-                    "0", //is_popular
-                    "Kuta Beach", //name
-                    "https://www.bali.com/media/image/285/bali-kuta-beach-sunset-atmosphere.jpg", //image
-                    "Kuta, Bali", //location
-                    "A Beautiful Kuta Beach", //subtitle
-                    "This is the descriptin of this tour, to my team, please note that this must be change according to the title of each view", //description
-                    "USD 23,5", // price
-                    "Overview", // overview
-                    "Preparation", // preparation
             },
             {
                     "2", //id_country
@@ -206,7 +180,7 @@ public class TourData {
             {
                     "4", //id_country
                     "5", // id_category
-                    "1", //is_popular
+                    "0", //is_popular
                     "Prambanan Temple", //name
                     "https://upload.wikimedia.org/wikipedia/commons/f/fc/Prambanan_Java245.jpg", //image
                     "Sleman, Yogyakarta", //location
@@ -232,7 +206,7 @@ public class TourData {
             {
                     "5", //id_country
                     "1", // id_category
-                    "1", //is_popular
+                    "0", //is_popular
                     "Waterfall Recreation", //name
                     "https://www.indonesia-tourism.com/central-kalimantan/images/tosah_waterfall.jpg", //image
                     "Murung, Kalimantan", //location
@@ -297,7 +271,7 @@ public class TourData {
 
     };
 
-    public static ArrayList<ModelTour> getListData(int is_popular){
+    public static ArrayList<ModelTour> getListData(int is_popular, int id_country){
         ModelTour model = null;
         ArrayList<ModelTour> list = new ArrayList<>();
 
@@ -317,7 +291,12 @@ public class TourData {
             model.setPreparation(data[10]);
 
             if(is_popular == Integer.valueOf(data[2])){
-                list.add(model);
+                if(id_country == 0){
+                    list.add(model);
+                }
+                else if(id_country == Integer.valueOf(data[0])){
+                    list.add(model);
+                }
             }
 
         }

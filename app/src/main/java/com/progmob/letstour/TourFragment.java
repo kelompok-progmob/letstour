@@ -1,6 +1,7 @@
 package com.progmob.letstour;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.constraint.ConstraintLayout;
@@ -16,6 +17,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.goka.kenburnsview.LoopViewPager;
@@ -50,6 +52,9 @@ public class TourFragment extends Fragment {
     BottomNavigationView mBottomNavigation;
 
     Toolbar mToolbar;
+
+    //Categories
+    LinearLayout mRecreational;
 
     ConstraintLayout rootView;
 
@@ -153,6 +158,19 @@ public class TourFragment extends Fragment {
         drawer.createDrawer(getContext(), ((AppCompatActivity) getActivity()), mToolbar);
 
         mBottomNavigation = rootView.findViewById(R.id.main_bottomnav);
+
+        mRecreational = rootView.findViewById(R.id.recreational);
+        mRecreational.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), TourListActivity.class); // gets the previously created intent
+                intent.putExtra("tipe", "1");
+                intent.putExtra("id", "0");
+                intent.putExtra("name","Recreational");
+                intent.putExtra("image", "https://www.mountainphotography.com/images/xl/20140226-Bridge-of-Heaven-Night.jpg");
+                startActivity(intent);
+            }
+        });
 
     }
 

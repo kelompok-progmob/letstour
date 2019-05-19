@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion 28
     defaultConfig {
         applicationId "com.progmob.letstour"
         minSdkVersion 23
@@ -101,5 +101,7 @@ dependencies {
     //Volley
     implementation 'com.android.volley:volley:1.1.1'
 
+    //audio player
+    implementation 'com.github.jeancsanchez:JcPlayer:2.6.16'
 
 }
