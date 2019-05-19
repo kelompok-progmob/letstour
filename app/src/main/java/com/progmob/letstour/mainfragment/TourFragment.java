@@ -181,7 +181,7 @@ public class TourFragment extends Fragment {
                 Intent intent = new Intent(getContext(), TourListActivity.class); // gets the previously created intent
                 intent.putExtra("tipe", "1");
                 intent.putExtra("id", "2");
-                intent.putExtra("name","recreational");
+                intent.putExtra("name","Cultural");
                 intent.putExtra("image", "https://www.mountainphotography.com/images/xl/20140226-Bridge-of-Heaven-Night.jpg");
                 startActivity(intent);
             }
@@ -194,7 +194,46 @@ public class TourFragment extends Fragment {
                 Intent intent = new Intent(getContext(), TourListActivity.class); // gets the previously created intent
                 intent.putExtra("tipe", "1");
                 intent.putExtra("id", "3");
-                intent.putExtra("name","recreational");
+                intent.putExtra("name","Nature");
+                intent.putExtra("image", "https://www.mountainphotography.com/images/xl/20140226-Bridge-of-Heaven-Night.jpg");
+                startActivity(intent);
+            }
+        });
+
+        mPleasure = rootView.findViewById(R.id.pleasure);
+        mPleasure.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), TourListActivity.class); // gets the previously created intent
+                intent.putExtra("tipe", "1");
+                intent.putExtra("id", "4");
+                intent.putExtra("name","Pleasure");
+                intent.putExtra("image", "https://www.mountainphotography.com/images/xl/20140226-Bridge-of-Heaven-Night.jpg");
+                startActivity(intent);
+            }
+        });
+
+        mReligious = rootView.findViewById(R.id.religious);
+        mReligious.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), TourListActivity.class); // gets the previously created intent
+                intent.putExtra("tipe", "1");
+                intent.putExtra("id", "4");
+                intent.putExtra("name","Religious");
+                intent.putExtra("image", "https://www.mountainphotography.com/images/xl/20140226-Bridge-of-Heaven-Night.jpg");
+                startActivity(intent);
+            }
+        });
+
+        mAdventour = rootView.findViewById(R.id.adventour);
+        mAdventour.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), TourListActivity.class); // gets the previously created intent
+                intent.putExtra("tipe", "1");
+                intent.putExtra("id", "4");
+                intent.putExtra("name","Adventour");
                 intent.putExtra("image", "https://www.mountainphotography.com/images/xl/20140226-Bridge-of-Heaven-Night.jpg");
                 startActivity(intent);
             }
