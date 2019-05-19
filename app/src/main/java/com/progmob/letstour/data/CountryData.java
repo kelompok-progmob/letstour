@@ -15,27 +15,27 @@ public class CountryData {
             {
                     "2", //id
                     "Lombok", //name
-                    "https://www.bali.com/media/image/663/best-resorts-bali.jpg" //image
+                    "https://asset.kompas.com/crop/0x0:780x390/780x390/data/photo/2015/06/21/2043250tiu-kelepp780x390.jpg" //image
             },
             {
                     "3", //id
                     "Papua", //name
-                    "https://www.diveworldwide.com/images/galleries/asia_indonesia_dive_raja_ampat_gallery_papua_resort_thomas_haider.jpg" //image
+                    "https://www.swaindestinations.com/south-pacific-islands/images/itineraries/new-guinea-paradise/TPA-056-Waterfall-near-Mt-Hagen.jpg" //image
             },
             {
                     "4", //id
                     "Yogyakarta", //name
-                    "https://www.dbs.com/iwov-resources/images/newsroom/indonesia/Blog/tempat%20wisata%20indonesia/image%20artikel-%20wisata%20Indonesia-%20yogyakarta.jpg" //image
+                    "https://s27957.pcdn.co/wp-content/uploads/2018/07/things-to-do-in-yogyakarta-borobudur.jpg" //image
             },
             {
                     "5", //id
                     "Kalimantan", //name
-                    "https://www.dbs.com/iwov-resources/images/newsroom/indonesia/Blog/tempat%20wisata%20indonesia/image%20artikel-%20wisata%20Indonesia-%20kalimantan.jpg" //image
+                    "https://storage.googleapis.com/tempatwisataunik/2017/01/Danau-Labuan-Cermin.jpg" //image
             },
             {
                     "6", //id
                     "Sulawesi", //name
-                    "https://www.dbs.com/iwov-resources/images/newsroom/indonesia/Blog/tempat%20wisata%20indonesia/image%20artikel-%20wisata%20Indonesia-wakatobi.jpg" //image
+                    "https://blog.reservasi.com/wp-content/uploads/2018/07/shutterstock_1064654387-1.jpg" //image
             }
     };
 

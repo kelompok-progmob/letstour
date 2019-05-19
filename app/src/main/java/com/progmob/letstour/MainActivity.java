@@ -13,6 +13,7 @@ import android.view.MenuItem;
 
 import com.progmob.letstour.adapter.CountriesAdapter;
 import com.progmob.letstour.mainfragment.AboutsFragment;
+import com.progmob.letstour.mainfragment.PromoFragment;
 import com.progmob.letstour.mainfragment.TourFragment;
 import com.progmob.letstour.model.ModelCountry;
 
@@ -28,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
     //Gragments
     TourFragment tourFragment = new TourFragment();
-    AboutsFragment aboutsFragment = new AboutsFragment();
+    PromoFragment promoFragment = new PromoFragment();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,8 +45,8 @@ public class MainActivity extends AppCompatActivity {
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.add(R.id.activity_main_container, tourFragment, "Tour");
 
-        transaction.add(R.id.activity_main_container, aboutsFragment, "About");
-        transaction.hide(aboutsFragment);
+        transaction.add(R.id.activity_main_container, promoFragment, "Promo");
+        transaction.hide(promoFragment);
 
         transaction.commitAllowingStateLoss();
 
@@ -66,13 +67,13 @@ public class MainActivity extends AppCompatActivity {
                         Log.d(TAG,"tour clicked");
                         transaction.show(tourFragment);
 
-                        transaction.hide(aboutsFragment);
+                        transaction.hide(promoFragment);
 
                         transaction.commitAllowingStateLoss();
                         break;
                     case R.id.navigation_promo :
                         Log.d(TAG,"promo clicked");
-                        transaction.show(aboutsFragment);
+                        transaction.show(promoFragment);
 
                         transaction.hide(tourFragment);
 
