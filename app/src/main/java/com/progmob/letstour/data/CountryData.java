@@ -10,12 +10,12 @@ public class CountryData {
             {
                     "1", //id
                     "Bali", //name
-                    "https://images.pexels.com/photos/1694621/pexels-photo-1694621.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" //image
+                    "http://en.presidentpost.id/wp-content/uploads/2018/01/Bali.jpeg" //image
             },
             {
                     "2", //id
                     "Lombok", //name
-                    "https://asset.kompas.com/crop/0x0:780x390/780x390/data/photo/2015/06/21/2043250tiu-kelepp780x390.jpg" //image
+                    "https://i0.wp.com/firstlomboktour.com/wp-content/uploads/2018/03/Kesukaan-pemandu-wisata-Gili-Kedis-Lombok-sumber-ig-travelspotindonesia.jpg?fit=750%2C836&ssl=1" //image
             },
             {
                     "3", //id
@@ -30,7 +30,7 @@ public class CountryData {
             {
                     "5", //id
                     "Kalimantan", //name
-                    "https://storage.googleapis.com/tempatwisataunik/2017/01/Danau-Labuan-Cermin.jpg" //image
+                    "https://indonesiatraveling.com/wp-content/uploads/2019/01/ora-beach-resort-01.jpg" //image
             },
             {
                     "6", //id

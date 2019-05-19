@@ -169,7 +169,7 @@ public class TourFragment extends Fragment {
                 intent.putExtra("tipe", "1");
                 intent.putExtra("id", "1");
                 intent.putExtra("name","Recreational");
-                intent.putExtra("image", "https://www.mountainphotography.com/images/xl/20140226-Bridge-of-Heaven-Night.jpg");
+                intent.putExtra("image", "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Iceland_Godafoss_1972.jpg/1200px-Iceland_Godafoss_1972.jpg");
                 startActivity(intent);
             }
         });
@@ -182,7 +182,7 @@ public class TourFragment extends Fragment {
                 intent.putExtra("tipe", "1");
                 intent.putExtra("id", "2");
                 intent.putExtra("name","Cultural");
-                intent.putExtra("image", "https://www.mountainphotography.com/images/xl/20140226-Bridge-of-Heaven-Night.jpg");
+                intent.putExtra("image", "https://upload.wikimedia.org/wikipedia/commons/f/f6/Ramayana_Kecak_Dance_Performance_after_sunset.jpg");
                 startActivity(intent);
             }
         });
@@ -195,7 +195,7 @@ public class TourFragment extends Fragment {
                 intent.putExtra("tipe", "1");
                 intent.putExtra("id", "3");
                 intent.putExtra("name","Nature");
-                intent.putExtra("image", "https://www.mountainphotography.com/images/xl/20140226-Bridge-of-Heaven-Night.jpg");
+                intent.putExtra("image", "https://d22ir9aoo7cbf6.cloudfront.net/wp-content/uploads/sites/2/2017/02/Hiking-trails-in-Singapore-Macritchie-nathanhayag-via-Flickr-.jpg");
                 startActivity(intent);
             }
         });
@@ -208,7 +208,7 @@ public class TourFragment extends Fragment {
                 intent.putExtra("tipe", "1");
                 intent.putExtra("id", "4");
                 intent.putExtra("name","Pleasure");
-                intent.putExtra("image", "https://www.mountainphotography.com/images/xl/20140226-Bridge-of-Heaven-Night.jpg");
+                intent.putExtra("image", "https://bisniswisata.co.id/wp-content/uploads/2018/06/NUSA-DUA.jpg");
                 startActivity(intent);
             }
         });
@@ -219,9 +219,9 @@ public class TourFragment extends Fragment {
             public void onClick(View view) {
                 Intent intent = new Intent(getContext(), TourListActivity.class); // gets the previously created intent
                 intent.putExtra("tipe", "1");
-                intent.putExtra("id", "4");
+                intent.putExtra("id", "5");
                 intent.putExtra("name","Religious");
-                intent.putExtra("image", "https://www.mountainphotography.com/images/xl/20140226-Bridge-of-Heaven-Night.jpg");
+                intent.putExtra("image", "https://images3.alphacoders.com/114/thumb-1920-114889.jpg");
                 startActivity(intent);
             }
         });
@@ -232,9 +232,9 @@ public class TourFragment extends Fragment {
             public void onClick(View view) {
                 Intent intent = new Intent(getContext(), TourListActivity.class); // gets the previously created intent
                 intent.putExtra("tipe", "1");
-                intent.putExtra("id", "4");
+                intent.putExtra("id", "6");
                 intent.putExtra("name","Adventour");
-                intent.putExtra("image", "https://www.mountainphotography.com/images/xl/20140226-Bridge-of-Heaven-Night.jpg");
+                intent.putExtra("image", "https://hdqwalls.com/wallpapers/mount-fuji-hd-qhd.jpg");
                 startActivity(intent);
             }
         });
