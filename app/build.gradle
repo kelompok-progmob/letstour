@@ -104,4 +104,8 @@ dependencies {
     //audio player
     implementation 'com.github.jeancsanchez:JcPlayer:2.6.16'
 
+    //youtube
+    implementation files('libs/YouTubeAndroidPlayerApi.jar')
+
+
 }

@@ -1,25 +1,10 @@
 package com.progmob.letstour.model;
 
 public class ModelTour {
-    String id, id_country, name, image, location, subtitle, description, price, overview, preparation;
+    String id, id_country, name, image, location, subtitle, description, price, overview, preparation, youtube, maps;
     int is_popular, id_category;
 
     public ModelTour() {
-    }
-
-    public ModelTour(String id, String id_country, String name, String image, String location, String subtitle, String description, String price, String overview, String preparation, int is_popular, int id_category) {
-        this.id = id;
-        this.id_country = id_country;
-        this.name = name;
-        this.image = image;
-        this.location = location;
-        this.subtitle = subtitle;
-        this.description = description;
-        this.price = price;
-        this.overview = overview;
-        this.preparation = preparation;
-        this.is_popular = is_popular;
-        this.id_category = id_category;
     }
 
     public String getId() {
@@ -115,5 +100,21 @@ public class ModelTour {
 
     public void setId_category(int id_category) {
         this.id_category = id_category;
+    }
+
+    public String getYoutube() {
+        return youtube;
+    }
+
+    public void setYoutube(String youtube) {
+        this.youtube = youtube;
+    }
+
+    public String getMaps() {
+        return maps;
+    }
+
+    public void setMaps(String maps) {
+        this.maps = maps;
     }
 }

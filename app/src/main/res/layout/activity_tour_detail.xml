@@ -54,6 +54,8 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:paddingBottom="80dp"
                     >
 
                     <TextView
@@ -207,12 +209,112 @@
                     <TextView
                         android:id="@+id/preparation"
                         android:layout_marginTop="8dp"
-                        android:paddingBottom="80dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textSize="16sp"
                         android:textColor="@color/colorPrimaryText"
                         tools:text="recipe idea. Trial must be done."/>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/thumbnail_container"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_gravity="bottom"
+                        card_view:cardCornerRadius="3dp"
+                        card_view:cardElevation="4dp"
+                        card_view:cardUseCompatPadding="true"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/detail_thumbnail"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:scaleType="centerCrop"
+                                />
+
+                            <LinearLayout
+                                android:layout_marginTop="2dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="8dp"
+                                >
+                                <net.steamcrafted.materialiconlib.MaterialIconView
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:materialIcon="video_image"
+                                    app:materialIconSize="26dp"
+                                    android:layout_marginLeft="4dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Tap to See This Tour's Youtube Video"
+                                    android:textColor="@color/colorPrimaryDark"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/maps_container"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        card_view:cardCornerRadius="3dp"
+                        card_view:cardElevation="4dp"
+                        card_view:cardUseCompatPadding="true"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/detail_maps"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/mapsplaceholder"
+                                />
+
+                            <LinearLayout
+                                android:layout_marginTop="2dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="8dp"
+                                >
+                                <net.steamcrafted.materialiconlib.MaterialIconView
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:materialIcon="map"
+                                    app:materialIconSize="26dp"
+                                    android:layout_marginLeft="4dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Tap to See This Tour's Location"
+                                    android:textColor="@color/colorPrimaryDark"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
 
                 </LinearLayout>
 
@@ -235,7 +337,7 @@
                 card_view:cardUseCompatPadding="true"
                 >
                 <com.example.jean.jcplayer.view.JcPlayerView
-                    android:id="@+id/playerview"
+                    android:id="@+id/viewplayer"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     />

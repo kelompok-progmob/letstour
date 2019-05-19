@@ -6,16 +6,21 @@ import android.databinding.DataBindingUtil;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.support.design.widget.AppBarLayout;
 import android.support.v4.widget.NestedScrollView;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 
 import com.example.jean.jcplayer.model.JcAudio;
 import com.example.jean.jcplayer.view.JcPlayerView;
 import com.progmob.letstour.databinding.ActivityTourDetailBinding;
+import com.progmob.letstour.utils.YoutubeId;
+import com.progmob.letstour.utils.YoutubePlayerViewActivity;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -24,14 +29,13 @@ public class TourDetailActivity extends AppCompatActivity {
 
     ActivityTourDetailBinding binding;
 
-
     final static String TAG = "TourDetail";
 
     NestedScrollView mScroller;
     Toolbar mToolbar;
     AppBarLayout mAppBar;
     float opacity = 0;
-    String id, name, image, location, subtitle, description, price, overview, preparation;
+    String id, name, image, location, subtitle, description, price, overview, preparation, youtube, maps;
 
     SharedPreferences sharedpreferences;
     Boolean session;
@@ -50,6 +54,8 @@ public class TourDetailActivity extends AppCompatActivity {
         price = extras.getString("price");
         overview = extras.getString("overview");
         preparation = extras.getString("preparation");
+        youtube = extras.getString("youtube");
+        maps = extras.getString("maps");
 
         Picasso.with(TourDetailActivity.this)
                 .load(image)
@@ -63,12 +69,37 @@ public class TourDetailActivity extends AppCompatActivity {
         binding.overview.setText(overview);
         binding.preparation.setText(preparation);
 
-        JcPlayerView jcplayerView = findViewById(R.id.playerview);
+        YoutubeId generateYoutubeId = new YoutubeId();
+        final String idThumbnail = generateYoutubeId.generateId(youtube);
+
+        Picasso.with(TourDetailActivity.this)
+                .load("https://img.youtube.com/vi/"+idThumbnail+"/0.jpg")
+                .placeholder(R.drawable.placeholder_vertical)
+                .into(binding.detailThumbnail);
+
+        binding.thumbnailContainer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TourDetailActivity.this, YoutubePlayerViewActivity.class);
+                intent.putExtra("idThumbnailExtra", idThumbnail);
+                startActivity(intent);
+            }
+        });
+
+        binding.mapsContainer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri gmmIntentUri = Uri.parse(maps);
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+                mapIntent.setPackage("com.google.android.apps.maps");
+                startActivity(mapIntent);
+            }
+        });
 
         ArrayList<JcAudio> jcAudios = new ArrayList<>();
         jcAudios.add(JcAudio.createFromRaw(name, R.raw.sample));
 
-        jcplayerView.initPlaylist(jcAudios, null);
+        binding.viewplayer.initPlaylist(jcAudios, null);
 
         setHeader();
 
@@ -154,7 +185,21 @@ public class TourDetailActivity extends AppCompatActivity {
         mToolbar.setBackgroundColor(Color.argb((int)(opacity * 255), 255, 255, 255));
     }
 
-//    private void settingBtnBottom(){
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == android.R.id.home) {
+            // do something here, such as start an Intent to the parent activity.
+            onBackPressed();
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    //    private void settingBtnBottom(){
 //        if (status.equals("fragment")) {
 //            binding.tourDetailBtnListTraveler.setVisibility(View.VISIBLE);
 //            binding.tourDetailBtnBook.setVisibility(View.GONE);

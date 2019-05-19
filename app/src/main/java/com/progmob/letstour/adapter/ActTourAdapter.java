@@ -77,6 +77,8 @@ public class ActTourAdapter extends RecyclerView.Adapter<ActTourAdapter.MyViewHo
                 intent.putExtra("overview", data.getOverview());
                 intent.putExtra("description", data.getDescription());
                 intent.putExtra("preparation", data.getPreparation());
+                intent.putExtra("youtube", data.getYoutube());
+                intent.putExtra("maps", data.getMaps());
                 context.startActivity(intent);
             }
         });
