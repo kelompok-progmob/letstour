@@ -185,7 +185,7 @@
                                     android:layout_width="69dp"
                                     android:layout_height="71dp"
                                     android:layout_gravity="center_horizontal"
-                                    android:src="@drawable/farmer"
+                                    android:src="@drawable/Recreational"
                                     app:backgroundTint="@color/colorSecondaryText"
                                     app:borderWidth="0dp"
                                     app:elevation="2dp" />
@@ -214,7 +214,7 @@
                                     android:layout_width="69dp"
                                     android:layout_height="71dp"
                                     android:layout_gravity="center_horizontal"
-                                    android:src="@drawable/dance"
+                                    android:src="@drawable/Cultural"
                                     app:backgroundTint="@color/colorSecondaryText"
                                     app:borderWidth="0dp"
                                     app:elevation="2dp" />
@@ -243,7 +243,7 @@
                                     android:layout_width="69dp"
                                     android:layout_height="71dp"
                                     android:layout_gravity="center_horizontal"
-                                    android:src="@drawable/food"
+                                    android:src="@drawable/Nature"
                                     app:backgroundTint="@color/colorSecondaryText"
                                     app:borderWidth="0dp"
                                     app:elevation="2dp" />
@@ -272,7 +272,7 @@
                                     android:layout_width="69dp"
                                     android:layout_height="71dp"
                                     android:layout_gravity="center_horizontal"
-                                    android:src="@drawable/handycraft"
+                                    android:src="@drawable/Pleasure"
                                     app:backgroundTint="@color/colorSecondaryText"
                                     app:borderWidth="0dp"
                                     app:elevation="2dp" />
@@ -311,7 +311,7 @@
                                     android:layout_width="69dp"
                                     android:layout_height="71dp"
                                     android:layout_gravity="center_horizontal"
-                                    android:src="@drawable/it"
+                                    android:src="@drawable/Religious"
                                     app:backgroundTint="@color/colorSecondaryText"
                                     app:borderWidth="0dp"
                                     app:elevation="2dp" />
@@ -340,7 +340,7 @@
                                     android:layout_width="69dp"
                                     android:layout_height="71dp"
                                     android:layout_gravity="center_horizontal"
-                                    android:src="@drawable/design"
+                                    android:src="@drawable/Adventure"
                                     app:backgroundTint="@color/colorSecondaryText"
                                     app:borderWidth="0dp"
                                     app:elevation="2dp" />
