@@ -700,20 +700,49 @@ public class TourData {
 
             },
             {
-                    "1", //id_country
+                    "1", // id_country
+                    "1", // id_category
+                    "0", // is_popular
+                    "Pantai Lovina", // nama
+                    "https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2018/09/Best-Time-To-Visit-Lovina-Beach.jpg", // image
+                    "Buleleng, Bali", // lokasi
+                    "Tempat Terbaik untuk Sunset", // subtitle
+                    "Pantai Lovina adalah kombinasi dari pantai-pantai kecil yang membentang beberapa desa lokal antara dua kabupaten di Kabupaten Bali Utara, Buleleng.", // description
+                    "USD 18,5", // harga
+                    "Pantai Lovina adalah alternatif yang bagus untuk pantai yang sangat populer (dan sering ramai di selatan Bali, seperti Kuta, Legian, dan Seminyak. Ombak yang lebih tenang, pantai pasir hitam yang tenang, sensasi di saat offing, dan pemandangan kehidupan malam, hanya beberapa hal yang meringkas pantai Bali utara yang pelik ini. Pantai Lovina membentang dua kilometer dari timur ke barat, dengan area kecil di desa Kalibukbuk sebagai titik fokus utamanya. Matahari terbenam cukup menjadi sorotan di sini, dengan kehidupan malam yang agak tenang setelah senja. Tempat parkir besar berbatasan dengan pantai dengan deretan kafe dan restoran seafood yang trendi di sisinya, di dekat pasir, patung lumba-lumba menjulang berdiri sebagai landmark resmi. Berjalanlah ke timur dan Anda akan menemukan deretan toko seni dan warung kecil tradisional. warung-warung yang menawarkan makanan ringan dan minuman di samping boardwalk yang sejuk. Matahari terbit di Pantai Lovina sama menariknya dengan matahari terbena, dan ketika para peserta lumba-lumba menonton wisata, naik papan warna-warni juku bermotor tradisional yang berwarna-warni. ng cadik untuk melihat sekilas beberapa spesies berbeda di perairan ini. Persiapkan gear kamera Anda saat sirip ini merusak permukaan air yang halus dalam sekejap mata. Spesies yang paling sering terlihat adalah lumba-lumba pemintal berkulit gelap (Stenella longirostris) yang ada sepanjang tahun, kecuali selama periode Tahun Baru Imlek China, ketika angin dan hujan lebat dan tidak teratur (kira-kira dari Februari hingga April) ", // ikhtisar
+                    "Pantai Lovina membentang dua kilometer dari timur ke barat, dengan area kecil di desa Kalibukbuk sebagai titik fokus utamanya. Matahari terbenam cukup menjadi sorotan di sini, dengan kehidupan malam yang agak tenang setelah senja. Ruang parkir besar berbatasan dengan pantai dengan deretan kafe dan restoran seafood yang trendi di sisinya. Di dekat pasir, patung lumba-lumba yang menjulang tinggi berdiri sebagai tengara resmi. Berjalanlah ke timur dan Anda akan menemukan deretan toko seni dan warung tradisional warung kecil yang menawarkan makanan ringan dan minuman di samping boardwalk yang lapang", // Persiapan
+                    "https://www.youtube.com/watch?v=6VAwYc23Rn8", // youtube
+                    "google.navigation: q = Pantai Lovina +", // Maps
+            },
+            {
+                    "1", // id_country
                     "2", // id_category
-                    "0", //is_popular
-                    "Lovina Beach", //name
-                    "https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2018/09/Best-Time-To-Visit-Lovina-Beach.jpg", //image
-                    "Buleleng, Bali", //location
-                    "Best Place for Sunset", //subtitle
-                    "Tari Api Kecak adalah salah satu pertunjukan seni paling ikonik di Bali, terkenal karena penggunaan vokal manusia yang dominan sebagai pengganti instrumen gamelan untuk mengiringi drama tari pada intinya.", //description
-                    "USD 23,5", // price
-                    "Pertunjukan Tari Kecak termasuk sebagai bagian dari paket jika Anda memesan tur umum ke kuil, dan yang berfungsi sempurna sebagai penutup hari Anda di daerah semenanjung selatan Bali. Namun, Anda dapat pergi hanya untuk pertunjukan dan beli tiket di loket amphitheatre di depan. Tiket untuk walk-in berkisar antara Rp 70.000 dan 100.000 tergantung pada musim rendah dan puncak, dan termasuk pamflet berisi sinopsis drama. ", // ikhtisar
-                    "Selain informasi mengenai biaya masuk teras sawah Jatiluwih. Anda juga akan mendapatkan informasi terkait sawah Jatiluwih, seperti:", // persiapan
-                    "https://youtu.be/DAnb7-ueGv0", // youtube
-                    "google.navigation:q=Uluwatu+Temple", //Maps
-
+                    "0", // is_popular
+                    "Garuda Wisnu Kencana", // nama
+                    "https://i.ytimg.com/vi/of-mfYy6hDw/hqdefault.jpg", // image
+                    "Ungasan, Bali", // lokasi
+                    "Patung Monumental Tertinggi di Dunia", // subtitle
+                    "Garuda Wisnu Kencana atau GWK, adalah taman budaya yang terletak di Ungasan, Badung di pulau Bali. Taman ini dikhususkan untuk Dewa Hindu Wisnu, dan gunungnya, Garuda, burung mitos yang menjadi temannya", // description
+                    "USD 8,5", // harga
+                    "Bangkit dari bukit-bukit terjal di Semenanjung Bali, patung Garuda Wisnu Kencana yang megah berdiri mengawasi pulau itu. Patung yang menjulang ini adalah tengara paling ikonik di Bali dan menggambarkan Dewa Hindu Wisnu, di puncak tunggangannya, elang mistis, Garuda. setinggi lebih dari 120 meter, ini adalah salah satu patung monumental tertinggi di dunia, lebih tinggi dari Patung Liberty dan Christ the Redeemer. Patung ini membuat fitur sentral yang menakjubkan dari Taman Budaya GWK, sebuah taman budaya 60 hektar yang mempesona yang menarik pengunjung dari seluruh dunia dan memberikan pandangan menggoda ke dalam warisan Bali yang menarik melalui pertunjukan budaya yang menarik, cerita rakyat legenda, patung besar dan presentasi sinematik yang dramatis. Nikmati pemandangan pulau yang indah saat Anda menjelajahi taman dengan berjalan kaki atau dengan Segway. Manjakan diri dalam warisan budaya Indonesia. masakan, benamkan diri Anda di tanah yang penuh mitologi, atau rencanakan acara besar Anda berikutnya di salah satu tempat epik GWK. ", // ikht isar
+                    "Dalam ritual bulan purnama di GWK, Anda akan mengambil bagian dalam serangkaian kegiatan mulai dari persiapan membuat Gebogan, parade ke lokasi atraksi, menikmati tarian sakral, ritual upacara bulan purnama dan dihibur oleh tarian Kecak yang terkenal . ", // Persiapan
+                    "https://www.youtube.com/watch?v=hVECwO2RkaY", // youtube
+                    "google.navigation: q = Garuda + Wisnu + Kencana", // Maps
+            },
+            {
+                    "1", // id_country
+                    "5", // id_category
+                    "0", // is_popular
+                    "Tanah Lot", // nama
+                    "https://www.pegipegi.com/travel/wp-content/uploads/2017/10/shutterstock_130548068.jpg", // image
+                    "Tabanan, Bali", // lokasi
+                    "Kuil Laut Indah Bali", // subtitle
+                    "Tanah Lot adalah formasi batu dari pulau Bali di Indonesia. Ini adalah rumah bagi kuil ziarah Hindu kuno Pura Tanah Lot ikon wisata dan budaya populer untuk fotografi.", // deskripsi
+                    "USD 152", // harga
+                    "Pura Tanah Lot adalah salah satu landmark paling penting di Bali, terkenal karena latar belakang lepas pantai dan matahari terbenamnya yang unik. Kuil Hindu kuno yang bertengger di atas singkapan di tengah ombak yang terus-menerus menerjang; Pura Tanah Lot hanyalah salah satu yang tidak boleh dikunjungi di Bali. ikon yang terlewat. ", // ikhtisar
+                    "Pada hari tur gabungan, cobalah mencapai Tanah Lot di sore hari untuk menjelajahi situs, kemudian menuju ke panggung terbuka Taman Budaya Surya Mandala dekat Batu Bolong untuk melihat matahari terbenam pertunjukan tari api 'Kecak' (diadakan setiap hari mulai pukul 18: 30), kemudian tinggal untuk makan malam di salah satu restoran di Sunset Terrace. Di sini Anda dapat menikmati pilihan Barat dan Asia, serta pemanggang saos dan makanan laut pedas favorit Bali - dipasangkan dengan bir dingin dan pemandangan tinggi 15 m dari atas kuil. ", // Persiapan
+                    "https://www.youtube.com/watch?v=YB1VQtvTxI0", // youtube
+                    "google.navigation: q = Tanah + Lot", // Maps
             },
             {
                     "2", //id_country
