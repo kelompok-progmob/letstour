@@ -109,7 +109,7 @@ public class PromoFragment extends Fragment {
         ((AppCompatActivity) getContext()).setSupportActionBar(mToolbar);
         ActionBar ab = ((AppCompatActivity) getContext()).getSupportActionBar();
         ab.setTitle("");
-//
+
         DrawerMenu drawer = new DrawerMenu();
         drawer.createDrawer(getContext(), ((AppCompatActivity) getActivity()), mToolbar);
 
