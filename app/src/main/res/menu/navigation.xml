@@ -2,12 +2,12 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_profile"
+        android:id="@+id/navigation_tour"
         android:icon="@drawable/ic_tourlist"
         android:title="@string/tour" />
 
     <item
-        android:id="@+id/navigation_tour"
+        android:id="@+id/navigation_promo"
         android:icon="@drawable/ic_groups"
         android:title="@string/info" />
 

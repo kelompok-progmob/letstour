@@ -28,7 +28,7 @@ public class TourListActivity extends AppCompatActivity {
     RecyclerView topRv, bottomRv;
     CountriesAdapter adapter;
 
-    String id, name, image;
+    String id, name, image, tipe;
     TextView mName;
     ImageView mImage;
     Toolbar mToolbar;
@@ -48,6 +48,7 @@ public class TourListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_tour_list);
 
         Bundle extras = getIntent().getExtras();
+        tipe = extras.getString("tipe");
         id = extras.getString("id");
         name = extras.getString("name");
         image = extras.getString("image");

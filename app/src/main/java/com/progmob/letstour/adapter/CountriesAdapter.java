@@ -69,7 +69,7 @@ public class CountriesAdapter extends RecyclerView.Adapter<CountriesAdapter.MyVi
                 ModelCountry data = getList().get(position);
 
                 Intent intent = new Intent(context, TourListActivity.class); // gets the previously created intent
-                intent.putExtra("tipe", "1");
+                intent.putExtra("tipe", "0");
                 intent.putExtra("id", data.getId());
                 intent.putExtra("name",data.getName());
                 intent.putExtra("image", data.getImage());

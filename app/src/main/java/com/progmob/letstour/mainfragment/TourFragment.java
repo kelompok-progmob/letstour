@@ -1,4 +1,4 @@
-package com.progmob.letstour;
+package com.progmob.letstour.mainfragment;
 
 import android.content.Context;
 import android.content.Intent;
@@ -21,6 +21,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.goka.kenburnsview.LoopViewPager;
+import com.progmob.letstour.R;
+import com.progmob.letstour.TourListActivity;
 import com.progmob.letstour.adapter.CountriesAdapter;
 import com.progmob.letstour.data.CountryData;
 import com.progmob.letstour.model.ModelCountry;
