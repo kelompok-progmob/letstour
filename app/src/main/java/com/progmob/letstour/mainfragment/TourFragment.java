@@ -168,7 +168,7 @@ public class TourFragment extends Fragment {
                 Intent intent = new Intent(getContext(), TourListActivity.class); // gets the previously created intent
                 intent.putExtra("tipe", "1");
                 intent.putExtra("id", "1");
-                intent.putExtra("name","recreational");
+                intent.putExtra("name","Recreational");
                 intent.putExtra("image", "https://www.mountainphotography.com/images/xl/20140226-Bridge-of-Heaven-Night.jpg");
                 startActivity(intent);
             }
